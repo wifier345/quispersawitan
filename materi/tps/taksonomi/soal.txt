@@ -1,0 +1,104 @@
+1. Dalam biologi, taksonomi tidak hanya sekadar memberi nama organisme, tetapi juga mencakup?
+a. Teknik budidaya tanaman
+b. Sistem pengelompokan makhluk hidup berdasarkan persamaan dan perbedaan ciri *
+c. Cara meningkatkan produksi tanaman
+d. Metode pengolahan hasil panen
+explanation: Taksonomi adalah cabang biologi yang berfokus pada klasifikasi, identifikasi, dan penamaan organisme. Dalam konteks kelapa sawit, taksonomi membantu memahami posisi tanaman ini dalam sistem kehidupan serta hubungan kekerabatannya dengan tanaman lain.
+
+2. Seorang mahasiswa menyebutkan bahwa taksonomi membantu memahami hubungan kekerabatan antar organisme. Pernyataan ini paling tepat karena?
+a. Taksonomi hanya membahas nama ilmiah
+b. Taksonomi mempelajari habitat organisme
+c. Taksonomi mengelompokkan organisme berdasarkan evolusi dan kesamaan ciri *
+d. Taksonomi digunakan untuk produksi pertanian
+explanation: Taksonomi tidak hanya memberi nama, tetapi juga menunjukkan hubungan evolusi antar organisme. Kelapa sawit, misalnya, memiliki kesamaan dengan tanaman palma lain dalam famili Arecaceae.
+
+3. Urutan tingkat takson dari yang paling tinggi ke rendah adalah?
+a. Spesies → Genus → Famili → Ordo → Kelas → Divisi
+b. Divisi → Kelas → Ordo → Famili → Genus → Spesies *
+c. Genus → Spesies → Famili → Ordo → Kelas → Divisi
+d. Ordo → Famili → Genus → Spesies → Kelas → Divisi
+explanation: Urutan takson dimulai dari tingkat paling umum (Divisi/Kingdom) hingga paling spesifik (Spesies). Semakin ke bawah, ciri organisme semakin spesifik.
+
+4. Dalam taksonomi, tingkat takson yang paling spesifik adalah?
+a. Genus
+b. Famili
+c. Spesies *
+d. Ordo
+explanation: Spesies adalah unit terkecil dalam taksonomi yang menunjukkan individu yang dapat berkembang biak dan memiliki ciri paling spesifik.
+
+5. Nama ilmiah kelapa sawit adalah Elaeis guineensis. Kata “Elaeis” menunjukkan?
+a. Famili
+b. Spesies
+c. Genus *
+d. Ordo
+explanation: Dalam sistem binomial nomenclature, kata pertama menunjukkan genus, sedangkan kata kedua menunjukkan spesies. Jadi Elaeis adalah genus.
+
+6. Dalam klasifikasi kelapa sawit, Arecaceae termasuk dalam tingkat?
+a. Ordo
+b. Famili *
+c. Kelas
+d. Genus
+explanation: Arecaceae adalah famili yang mencakup semua tanaman palma, termasuk kelapa sawit, kelapa, dan kurma.
+
+7. Seorang peneliti menyebut kelapa sawit termasuk dalam kelas Liliopsida. Hal ini menunjukkan bahwa sawit termasuk tanaman?
+a. Dikotil
+b. Gymnospermae
+c. Monokotil *
+d. Paku-pakuan
+explanation: Liliopsida adalah kelompok tumbuhan monokotil yang memiliki satu kotiledon, termasuk kelapa sawit.
+
+8. Dalam sistem taksonomi, Divisi untuk kelapa sawit adalah?
+a. Spermatophyta *
+b. Bryophyta
+c. Pteridophyta
+d. Thallophyta
+explanation: Kelapa sawit termasuk tumbuhan berbiji (Spermatophyta), karena berkembang biak dengan biji.
+
+9. Tingkat takson “ordo” untuk kelapa sawit adalah?
+a. Palmae
+b. Arecales *
+c. Liliopsida
+d. Elaeis
+explanation: Ordo Arecales mencakup tumbuhan palma, termasuk famili Arecaceae.
+
+10. Seorang siswa salah menyusun takson kelapa sawit. Urutan yang benar adalah?
+a. Genus → Famili → Ordo → Kelas → Divisi
+b. Divisi → Kelas → Ordo → Famili → Genus → Spesies *
+c. Famili → Genus → Spesies → Ordo → Kelas
+d. Spesies → Genus → Famili → Ordo → Kelas
+explanation: Urutan takson harus dari umum ke spesifik: Divisi, Kelas, Ordo, Famili, Genus, Spesies.
+
+11. Jika dua tanaman memiliki genus yang sama, maka dapat disimpulkan bahwa?
+a. Tidak memiliki hubungan
+b. Memiliki hubungan kekerabatan dekat *
+c. Berbeda jauh
+d. Berasal dari habitat berbeda
+explanation: Organisme dengan genus yang sama memiliki kesamaan ciri yang cukup dekat dibandingkan dengan tingkat takson yang lebih tinggi.
+
+12. Dalam taksonomi kelapa sawit, “guineensis” menunjukkan?
+a. Nama famili
+b. Nama genus
+c. Nama spesies (penunjuk spesifik) *
+d. Nama kelas
+explanation: Kata kedua dalam nama ilmiah menunjukkan spesies, yang biasanya menggambarkan karakteristik atau asal organisme.
+
+13. Pengelompokan kelapa sawit ke dalam famili Arecaceae didasarkan pada?
+a. Warna buah
+b. Persamaan struktur morfologi seperti batang dan daun *
+c. Lokasi geografis
+d. Kandungan minyak
+explanation: Taksonomi didasarkan pada kesamaan ciri morfologi dan genetik, bukan hanya lokasi atau manfaat ekonomi.
+
+14. Dalam taksonomi, semakin tinggi tingkat takson, maka?
+a. Ciri semakin spesifik
+b. Jumlah anggota semakin sedikit
+c. Persamaan ciri semakin umum *
+d. Hubungan semakin dekat
+explanation: Pada tingkat tinggi seperti divisi atau kelas, ciri yang digunakan sangat umum dan mencakup banyak organisme.
+
+15. Penerapan taksonomi dalam kelapa sawit penting karena?
+a. Menentukan harga jual
+b. Mengetahui posisi ilmiah dan hubungan kekerabatan tanaman *
+c. Menghitung produksi
+d. Menentukan pupuk
+explanation: Taksonomi membantu memahami klasifikasi ilmiah, hubungan evolusi, serta karakteristik dasar tanaman, yang penting dalam penelitian dan pengembangan sawit.

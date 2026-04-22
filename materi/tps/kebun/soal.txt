@@ -1,0 +1,174 @@
+1. Dalam manajemen kebun sawit, suatu unit terkecil yang biasanya digunakan untuk pengaturan operasional harian seperti panen dan pemeliharaan adalah:
+a. Afdeling
+b. Areal
+c. Blok *
+d. Estate
+explanation: Blok merupakan unit terkecil dalam pembagian kebun yang digunakan untuk mempermudah pengelolaan seperti panen dan pemeliharaan.
+
+2. Jika sebuah kebun dibagi menjadi beberapa bagian besar yang masing-masing dipimpin oleh seorang asisten, maka unit tersebut disebut:
+a. Blok
+b. Afdeling *
+c. Areal kecil
+d. Plot
+explanation: Afdeling adalah bagian dari kebun yang lebih besar dari blok dan biasanya dipimpin oleh seorang asisten.
+
+3. Dalam struktur organisasi kebun, hubungan yang paling tepat adalah:
+a. Blok terdiri dari beberapa afdeling
+b. Afdeling terdiri dari beberapa blok *
+c. Areal terdiri dari satu blok
+d. Blok lebih besar dari afdeling
+explanation: Afdeling terdiri dari beberapa blok sebagai unit yang lebih kecil.
+
+4. Jika luas satu blok rata-rata 25 ha dan terdapat 8 blok dalam satu afdeling, maka luas afdeling tersebut adalah:
+a. 150 ha
+b. 175 ha
+c. 200 ha *
+d. 225 ha
+explanation: 25 ha × 8 blok = 200 ha, sehingga luas afdeling adalah 200 ha.
+
+5. Dalam konteks kebun sawit, istilah areal lebih tepat merujuk pada:
+a. Bagian terkecil kebun
+b. Seluruh wilayah kebun atau bagian tertentu secara umum *
+c. Hanya lahan kosong
+d. Hanya tanaman muda
+explanation: Areal adalah istilah umum untuk wilayah kebun, bisa mencakup beberapa afdeling atau keseluruhan kebun.
+
+6. Jika satu hektar berisi 143 pohon, maka dalam blok seluas 21 ha jumlah pohon adalah:
+a. 2.903 *
+b. 2.800
+c. 3.003
+d. 2.713
+explanation: 143 × 21 = 2.903 pohon dalam satu blok.
+
+7. Fungsi utama pembagian blok dalam kebun sawit adalah:
+a. Menentukan harga jual
+b. Mempermudah pengelolaan operasional *
+c. Mengurangi luas lahan
+d. Mengganti tanaman
+explanation: Blok mempermudah pengaturan kegiatan seperti panen, pemupukan, dan pengawasan.
+
+8. Jika dibandingkan, afdeling memiliki fungsi yang lebih ke arah:
+a. Teknis lapangan detail
+b. Manajerial dan pengawasan *
+c. Pengolahan hasil
+d. Penjualan produk
+explanation: Afdeling digunakan untuk pengelolaan tingkat menengah yang mencakup beberapa blok.
+
+9. Dalam satu areal terdapat 3 afdeling, masing-masing 180 ha. Total luas areal adalah:
+a. 360 ha
+b. 540 ha *
+c. 600 ha
+d. 480 ha
+explanation: 3 × 180 ha = 540 ha total luas areal.
+
+10. Jika jarak tanam menghasilkan 136 pohon per hektar, maka jumlah pohon dalam 10 ha adalah:
+a. 1.260
+b. 1.360 *
+c. 1.460
+d. 1.300
+explanation: 136 × 10 = 1.360 pohon.
+
+11. Perbedaan utama antara blok dan areal adalah:
+a. Blok lebih luas dari areal
+b. Areal lebih kecil dari blok
+c. Blok bagian dari areal *
+d. Tidak ada hubungan
+explanation: Blok adalah bagian kecil dari areal yang lebih luas.
+
+12. Jika suatu afdeling memiliki 6 blok dengan luas masing-masing berbeda, maka total luas afdeling:
+a. Hanya dihitung dari satu blok
+b. Rata-rata blok dikali jumlah
+c. Jumlah seluruh luas blok *
+d. Tidak bisa dihitung
+explanation: Total luas afdeling adalah penjumlahan semua blok di dalamnya.
+
+13. Dalam praktiknya, jumlah pohon per hektar dipengaruhi oleh:
+a. Harga pupuk
+b. Jarak tanam *
+c. Jumlah tenaga kerja
+d. Curah hujan saja
+explanation: Jarak tanam menentukan kepadatan pohon per hektar.
+
+14. Jika satu afdeling memiliki 25.000 pohon dan luasnya 200 ha, maka rata-rata pohon per hektar adalah:
+a. 125 *
+b. 150
+c. 130
+d. 140
+explanation: 25.000 ÷ 200 = 125 pohon per hektar.
+
+15. Salah satu fungsi pembagian areal adalah:
+a. Mengurangi produksi
+b. Mempermudah perencanaan dan pengawasan *
+c. Mengganti tanaman
+d. Menghilangkan blok
+explanation: Areal membantu dalam perencanaan skala besar dan pengawasan kebun.
+
+16. Jika dibandingkan, unit terbesar dalam struktur kebun adalah:
+a. Blok
+b. Afdeling
+c. Areal *
+d. Baris tanaman
+explanation: Areal merupakan unit paling luas dibanding blok dan afdeling.
+
+17. Kesalahan dalam menghitung jumlah pohon per blok dapat menyebabkan:
+a. Tidak ada dampak
+b. Kesalahan perencanaan produksi *
+c. Tanaman mati
+d. Tanah rusak
+explanation: Perhitungan pohon penting untuk estimasi produksi dan kebutuhan input.
+
+18. Dalam satu blok terdapat 3.000 pohon dengan luas 20 ha. Maka pohon per hektar adalah:
+a. 140
+b. 150 *
+c. 160
+d. 130
+explanation: 3.000 ÷ 20 = 150 pohon per hektar.
+
+19. Hubungan antara afdeling dan areal dapat digambarkan sebagai:
+a. Afdeling lebih besar dari areal
+b. Areal terdiri dari beberapa afdeling *
+c. Tidak saling terkait
+d. Afdeling berdiri sendiri
+explanation: Areal mencakup beberapa afdeling dalam satu kebun.
+
+20. Jika suatu areal memiliki 2 afdeling masing-masing 150 ha, dan setiap ha terdapat 140 pohon, total pohon adalah:
+a. 42.000 *
+b. 40.000
+c. 45.000
+d. 38.000
+explanation: 2 × 150 = 300 ha, lalu 300 × 140 = 42.000 pohon.
+
+21. Dalam praktik lapangan, blok sering diberi kode atau nomor untuk:
+a. Menambah luas
+b. Mempermudah identifikasi *
+c. Mengurangi pohon
+d. Mengubah tanah
+explanation: Penomoran blok memudahkan identifikasi dan pengelolaan.
+
+22. Jika satu blok terlalu luas, dampak yang mungkin terjadi adalah:
+a. Pengelolaan lebih mudah
+b. Pengawasan kurang efektif *
+c. Produksi meningkat drastis
+d. Tidak ada perubahan
+explanation: Blok terlalu luas menyulitkan pengawasan dan operasional.
+
+23. Dalam sistem pembagian kebun, tujuan utama adanya hirarki blok–afdeling–areal adalah:
+a. Memperumit manajemen
+b. Mempermudah pengelolaan bertingkat *
+c. Mengurangi tenaga kerja
+d. Mengubah struktur tanah
+explanation: Hirarki membantu pengelolaan dari skala kecil hingga besar secara efisien.
+
+24. Jika jumlah pohon per hektar terlalu tinggi, kemungkinan dampaknya adalah:
+a. Produksi selalu meningkat
+b. Persaingan antar tanaman meningkat *
+c. Tanaman lebih sehat
+d. Tanah lebih subur
+explanation: Kepadatan tinggi menyebabkan persaingan nutrisi, air, dan cahaya.
+
+25. Jika dibandingkan dari segi fungsi, blok lebih fokus pada:
+a. Perencanaan makro
+b. Operasional lapangan detail *
+c. Kebijakan perusahaan
+d. Penentuan harga
+explanation: Blok digunakan untuk kegiatan operasional detail seperti panen dan pemeliharaan.

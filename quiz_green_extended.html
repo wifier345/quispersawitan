@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuizBelajar — Fokus & Berkembang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    :root {
+      --cream:        #faf9f5;
+      --cream-deep:   #f4f2eb;
+      --cream-border: #e8e4d8;
+      --white:        #ffffff;
+      --green-50:     #f0f7f0;
+      --green-100:    #ddf0dd;
+      --green-200:    #b8dfb8;
+      --green-300:    #7ec87e;
+      --green-400:    #4caf50;
+      --green-500:    #388e3c;
+      --green-600:    #2e7d32;
+      --green-700:    #1b5e20;
+      --sage:         #87a878;
+      --sage-light:   #c8dbbf;
+      --sage-bg:      #eef5eb;
+      --text-dark:    #2c3e2d;
+      --text-body:    #4a5e4b;
+      --text-muted:   #7a927b;
+      --text-light:   #a8bfa9;
+      --success-bg:   #e8f5e9;
+      --danger:       #c0392b;
+      --danger-bg:    #fdecea;
+      --danger-light: #e57373;
+      --warning:      #e67e22;
+      --warning-bg:   #fef3e2;
+      --shadow-sm:    0 2px 8px rgba(44,62,45,0.08);
+      --shadow-md:    0 6px 24px rgba(44,62,45,0.10);
+      --shadow-green: 0 4px 20px rgba(76,175,80,0.20);
+      --radius:       14px;
+      --radius-lg:    22px;
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'Plus Jakarta Sans', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--text-dark);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        radial-gradient(circle at 10% 15%, rgba(135,168,120,0.12) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(76,175,80,0.08) 0%, transparent 40%);
+      pointer-events: none; z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: radial-gradient(circle, rgba(135,168,120,0.18) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none; z-index: 0; opacity: 0.5;
+    }
+    #root { position: relative; z-index: 1; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--cream-deep); }
+    ::-webkit-scrollbar-thumb { background: var(--sage-light); border-radius: 99px; }
+
+    @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes leafSway { 0%,100% { transform:rotate(-3deg); } 50% { transform:rotate(3deg); } }
+    @keyframes pulseWarm { 0% { box-shadow:0 0 0 0 rgba(192,57,43,0.25); } 70% { box-shadow:0 0 0 10px transparent; } 100% { box-shadow:0 0 0 0 transparent; } }
+    @keyframes tickDot { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.3); opacity:0.6; } }
+    @keyframes barIn { from { width:0; } }
+    @keyframes countUp { from { opacity:0; transform:translateY(10px) scale(0.9); } to { opacity:1; transform:translateY(0) scale(1); } }
+    @keyframes checkPop { 0% { transform:scale(0); } 70% { transform:scale(1.15); } 100% { transform:scale(1); } }
+
+    .au  { animation: fadeUp 0.5s cubic-bezier(.22,1,.36,1) both; }
+    .d1  { animation-delay: 0.07s; }
+    .d2  { animation-delay: 0.14s; }
+    .d3  { animation-delay: 0.21s; }
+    .d4  { animation-delay: 0.28s; }
+    .fi  { animation: fadeIn 0.35s ease both; }
+
+    .screen { min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:20px 16px 60px; }
+    .container { width:100%; max-width:660px; }
+
+    .topbar { width:100%; max-width:660px; display:flex; align-items:center; justify-content:space-between; padding:18px 0 20px; }
+    .logo { font-family:var(--font-display); font-size:1.4rem; font-weight:700; color:var(--green-600); display:flex; align-items:center; gap:8px; letter-spacing:-0.3px; }
+    .logo-leaf { display:inline-block; animation:leafSway 3s ease-in-out infinite; transform-origin:bottom center; }
+    .topbar-nav { display:flex; gap:6px; }
+    .nav-btn { display:flex; align-items:center; gap:6px; padding:8px 16px; border-radius:99px; border:1.5px solid var(--cream-border); background:var(--white); color:var(--text-muted); font-family:var(--font-body); font-size:0.82rem; font-weight:600; cursor:pointer; transition:all 0.2s; box-shadow:var(--shadow-sm); }
+    .nav-btn:hover { border-color:var(--green-300); color:var(--green-600); background:var(--green-50); }
+    .nav-btn.active { background:var(--green-500); color:#fff; border-color:var(--green-500); box-shadow:var(--shadow-green); }
+
+    .card { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius-lg); padding:26px; margin-bottom:14px; box-shadow:var(--shadow-sm); transition:box-shadow 0.2s; }
+    .card:hover { box-shadow:var(--shadow-md); }
+
+    .section-label { font-size:0.68rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-light); margin-bottom:10px; }
+    .section-label-g { color:var(--sage); }
+
+    .hero-title { font-family:var(--font-display); font-size:clamp(2rem,5vw,2.8rem); font-weight:700; line-height:1.15; letter-spacing:-0.5px; color:var(--text-dark); margin-bottom:10px; }
+    .hero-title em { font-style:italic; color:var(--green-500); }
+    .hero-sub { color:var(--text-muted); font-size:0.95rem; line-height:1.65; margin-bottom:20px; }
+    .streak-pill { display:inline-flex; align-items:center; gap:8px; background:var(--sage-bg); border:1.5px solid var(--sage-light); border-radius:99px; padding:7px 14px; font-size:0.82rem; color:var(--green-600); font-weight:600; }
+
+    .field-label { display:flex; align-items:center; gap:7px; font-size:0.82rem; font-weight:700; color:var(--text-body); margin-bottom:8px; }
+    .input-field { width:100%; background:var(--cream); border:1.5px solid var(--cream-border); border-radius:var(--radius); padding:13px 16px; color:var(--text-dark); font-family:var(--font-body); font-size:0.95rem; font-weight:500; outline:none; transition:border-color 0.2s, box-shadow 0.2s; -webkit-appearance:none; appearance:none; }
+    .input-field:focus { border-color:var(--green-400); box-shadow:0 0 0 3px rgba(76,175,80,0.12); background:var(--white); }
+    .input-num { text-align:center; font-size:1.5rem; font-weight:700; font-family:var(--font-display); }
+
+    .file-drop { border:2px dashed var(--cream-border); border-radius:var(--radius); padding:28px 20px; text-align:center; cursor:pointer; transition:all 0.25s; background:var(--cream); position:relative; }
+    .file-drop:hover { border-color:var(--green-300); background:var(--green-50); }
+    .file-drop input[type=file] { position:absolute; inset:0; opacity:0; cursor:pointer; width:100%; height:100%; }
+    .file-drop-icon { font-size:2.2rem; margin-bottom:8px; }
+    .file-drop-text { font-size:0.88rem; color:var(--text-muted); }
+    .file-drop-text strong { color:var(--green-600); }
+
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:none; border-radius:var(--radius); font-family:var(--font-body); font-weight:700; font-size:0.95rem; cursor:pointer; transition:all 0.2s; }
+    .btn-primary { background:var(--green-500); color:#fff; padding:16px 28px; width:100%; font-size:1rem; box-shadow:var(--shadow-green); border-radius:var(--radius-lg); }
+    .btn-primary:hover:not(:disabled) { background:var(--green-600); transform:translateY(-2px); box-shadow:0 8px 28px rgba(76,175,80,0.3); }
+    .btn-primary:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+    .btn-secondary { background:var(--cream-deep); color:var(--text-body); padding:13px 22px; border:1.5px solid var(--cream-border); border-radius:var(--radius); }
+    .btn-secondary:hover { background:var(--white); border-color:var(--green-200); color:var(--green-700); }
+    .btn-finish { background:var(--green-50); color:var(--green-700); padding:13px 22px; border:2px solid var(--green-300); border-radius:var(--radius); font-weight:700; }
+    .btn-finish:hover { background:var(--green-400); color:#fff; border-color:var(--green-400); }
+    .btn-danger { background:var(--danger-bg); color:var(--danger); padding:10px 18px; border:1.5px solid rgba(192,57,43,0.2); font-size:0.83rem; border-radius:var(--radius); }
+    .btn-danger:hover { background:rgba(192,57,43,0.12); }
+    .btn-danger-solid { background:var(--danger)!important; color:#fff!important; }
+    .btn-danger-solid:hover { background:#a93226!important; }
+
+    .alert { border-radius:var(--radius); padding:11px 14px; font-size:0.84rem; font-weight:500; display:flex; align-items:center; gap:8px; margin-top:10px; }
+    .alert-success { background:var(--success-bg); color:var(--green-700); border:1px solid var(--green-200); }
+    .alert-danger  { background:var(--danger-bg); color:var(--danger); border:1px solid rgba(192,57,43,0.2); }
+    .alert-info    { background:var(--sage-bg); color:var(--green-600); border:1px solid var(--sage-light); }
+
+    .divider { height:1px; background:var(--cream-border); margin:18px 0; }
+    .collapse-btn { display:flex; align-items:center; justify-content:space-between; width:100%; background:none; border:none; color:var(--text-body); font-family:var(--font-body); font-size:0.88rem; font-weight:700; cursor:pointer; padding:0; }
+    .collapse-btn:hover { color:var(--green-600); }
+
+    .format-box { background:var(--cream); border:1px solid var(--cream-border); border-radius:var(--radius); padding:14px 16px; font-family:'Courier New',monospace; font-size:0.8rem; line-height:1.8; color:var(--text-muted); }
+    .format-box .kw { color:var(--text-dark); font-weight:700; }
+    .format-box .correct { color:var(--green-600); font-weight:600; }
+
+    .quiz-header { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:16px; }
+    .q-counter { font-family:var(--font-display); font-weight:600; font-size:1rem; color:var(--text-muted); font-style:italic; }
+    .q-counter strong { color:var(--text-dark); font-style:normal; }
+
+    .timer-pill { display:flex; align-items:center; gap:7px; background:var(--white); border:1.5px solid var(--cream-border); border-radius:99px; padding:8px 16px; font-family:var(--font-display); font-weight:700; font-size:1rem; color:var(--text-dark); box-shadow:var(--shadow-sm); transition:all 0.3s; }
+    .timer-pill.warning { background:var(--warning-bg); border-color:rgba(230,126,34,0.35); color:var(--warning); }
+    .timer-pill.danger  { background:var(--danger-bg); border-color:rgba(192,57,43,0.35); color:var(--danger); animation:pulseWarm 1.5s ease infinite; }
+    .timer-dot { width:7px; height:7px; border-radius:50%; background:var(--green-400); animation:tickDot 1s ease-in-out infinite; }
+    .timer-pill.warning .timer-dot { background:var(--warning); }
+    .timer-pill.danger  .timer-dot { background:var(--danger); }
+
+    .progress-track { height:6px; background:var(--cream-deep); border-radius:99px; margin-bottom:18px; overflow:hidden; border:1px solid var(--cream-border); }
+    .progress-fill  { height:100%; background:linear-gradient(90deg,var(--green-400),var(--green-300)); border-radius:99px; transition:width 0.4s cubic-bezier(.22,1,.36,1); }
+
+    .nav-dots { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:16px; }
+    .nav-dot { width:28px; height:28px; border-radius:8px; border:1.5px solid var(--cream-border); font-size:0.68rem; font-weight:700; cursor:pointer; transition:all 0.15s; font-family:var(--font-body); }
+    .nav-dot.unanswered { background:var(--cream); color:var(--text-light); }
+    .nav-dot.answered   { background:var(--green-500); color:#fff; border-color:var(--green-500); }
+    .nav-dot.current    { background:var(--white); color:var(--green-600); border-color:var(--green-400); border-width:2px; box-shadow:0 0 0 3px rgba(76,175,80,0.15); }
+
+    .per-q-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; font-size:0.78rem; color:var(--text-light); font-weight:500; }
+
+    .question-box { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius-lg); padding:26px 24px; margin-bottom:16px; box-shadow:var(--shadow-sm); position:relative; overflow:hidden; }
+    .question-box::before { content:''; position:absolute; left:0; top:0; bottom:0; width:4px; background:linear-gradient(180deg,var(--green-400),var(--sage)); border-radius:4px 0 0 4px; }
+    .q-badge { display:inline-flex; align-items:center; gap:5px; background:var(--green-50); color:var(--green-600); font-size:0.68rem; font-weight:700; padding:4px 12px; border-radius:99px; margin-bottom:12px; letter-spacing:0.08em; text-transform:uppercase; border:1px solid var(--green-200); }
+    .question-text { font-family:var(--font-display); font-size:1.18rem; font-weight:600; line-height:1.55; color:var(--text-dark); }
+
+    .options-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:20px; }
+    @media (max-width:480px) { .options-grid { grid-template-columns:1fr; } }
+    .option-btn { background:var(--white); border:2px solid var(--cream-border); border-radius:var(--radius); padding:14px 14px; text-align:left; cursor:pointer; transition:all 0.18s; display:flex; align-items:flex-start; gap:10px; color:var(--text-body); font-family:var(--font-body); font-size:0.9rem; font-weight:400; line-height:1.5; box-shadow:var(--shadow-sm); }
+    .option-btn:hover { border-color:var(--green-300); background:var(--green-50); transform:translateY(-1px); box-shadow:var(--shadow-md); }
+    .option-btn.selected { background:var(--green-50); border-color:var(--green-400); color:var(--green-700); box-shadow:0 0 0 2px rgba(76,175,80,0.15),var(--shadow-sm); }
+    .option-letter { display:flex; align-items:center; justify-content:center; min-width:26px; height:26px; border-radius:8px; background:var(--cream-deep); font-weight:800; font-size:0.75rem; font-family:var(--font-display); color:var(--text-muted); transition:all 0.18s; border:1.5px solid var(--cream-border); }
+    .option-btn.selected .option-letter { background:var(--green-500); color:#fff; border-color:var(--green-500); animation:checkPop 0.3s cubic-bezier(.22,1,.36,1); }
+
+    .quiz-footer { display:flex; gap:10px; }
+    .quiz-footer .btn { flex:1; }
+
+    .score-ring { position:relative; width:140px; height:140px; margin:0 auto 20px; }
+    .score-ring svg { transform:rotate(-90deg); }
+    .score-value { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .score-num { font-family:var(--font-display); font-size:2.4rem; font-weight:700; line-height:1; animation:countUp 0.8s 0.4s cubic-bezier(.22,1,.36,1) both; }
+    .score-denom { font-size:0.72rem; color:var(--text-light); margin-top:2px; font-weight:600; }
+
+    .stats-row { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:14px; }
+    .stat-box { background:var(--cream); border:1.5px solid var(--cream-border); border-radius:var(--radius); padding:14px 10px; text-align:center; }
+    .stat-val { font-family:var(--font-display); font-size:1.5rem; font-weight:700; margin-bottom:2px; }
+    .stat-lbl { font-size:0.7rem; color:var(--text-light); font-weight:600; letter-spacing:0.04em; text-transform:uppercase; }
+
+    .scrollable { max-height:360px; overflow-y:auto; padding-right:4px; }
+    .review-list { display:flex; flex-direction:column; gap:9px; }
+    .review-item { border-radius:var(--radius); padding:13px 15px; border:1.5px solid; }
+    .review-item.correct { background:var(--success-bg); border-color:var(--green-200); }
+    .review-item.wrong   { background:var(--danger-bg); border-color:rgba(192,57,43,0.2); }
+    .review-item.skipped { background:var(--warning-bg); border-color:rgba(230,126,34,0.2); }
+    .review-q   { font-size:0.86rem; font-weight:600; margin-bottom:6px; color:var(--text-dark); line-height:1.45; }
+    .review-ans { font-size:0.8rem; display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+    .badge { display:inline-flex; align-items:center; gap:4px; padding:3px 10px; border-radius:99px; font-size:0.73rem; font-weight:700; }
+    .badge-ok   { background:var(--success-bg); color:var(--green-700); border:1px solid var(--green-200); }
+    .badge-no   { background:var(--danger-bg); color:var(--danger); border:1px solid rgba(192,57,43,0.2); }
+    .badge-skip { background:var(--warning-bg); color:var(--warning); border:1px solid rgba(230,126,34,0.2); }
+    .grade-pill { display:inline-flex; align-items:center; gap:6px; border-radius:99px; padding:5px 16px; font-weight:700; font-size:0.85rem; font-family:var(--font-display); }
+
+    .overview-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px; }
+    .overview-card { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius); padding:16px; box-shadow:var(--shadow-sm); }
+    .overview-val { font-family:var(--font-display); font-size:1.7rem; font-weight:700; margin-bottom:2px; }
+    .overview-lbl { font-size:0.72rem; color:var(--text-light); font-weight:600; text-transform:uppercase; letter-spacing:0.04em; }
+
+    .history-list { display:flex; flex-direction:column; gap:10px; }
+    .history-card { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius-lg); padding:18px; display:flex; align-items:center; gap:14px; box-shadow:var(--shadow-sm); cursor:pointer; transition:all 0.2s; }
+    .history-card:hover { box-shadow:var(--shadow-md); border-color:var(--green-200); }
+    .history-rank { min-width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; font-size:1rem; }
+    .history-info { flex:1; min-width:0; }
+    .history-title { font-weight:600; font-size:0.9rem; margin-bottom:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:var(--text-dark); }
+    .history-meta { font-size:0.75rem; color:var(--text-light); display:flex; flex-wrap:wrap; gap:8px; }
+    .history-score-badge { font-family:var(--font-display); font-size:1rem; font-weight:700; text-align:right; white-space:nowrap; }
+    .mini-bar { height:3px; background:var(--cream-deep); border-radius:99px; overflow:hidden; margin-top:6px; }
+    .mini-fill { height:100%; border-radius:99px; }
+    .history-empty { text-align:center; padding:60px 20px; color:var(--text-light); }
+
+    /* ====== MATERI ====== */
+    .materi-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
+    @media (max-width:480px) { .materi-grid { grid-template-columns:1fr; } }
+    .materi-card { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius-lg); padding:22px 20px; cursor:pointer; transition:all 0.22s cubic-bezier(.22,1,.36,1); box-shadow:var(--shadow-sm); position:relative; overflow:hidden; }
+    .materi-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--green-400),var(--sage)); }
+    .materi-card:hover { transform:translateY(-4px); box-shadow:0 10px 32px rgba(44,62,45,0.13); border-color:var(--green-200); }
+    .materi-card-icon { font-size:2rem; margin-bottom:10px; }
+    .materi-card-title { font-family:var(--font-display); font-size:1.05rem; font-weight:700; color:var(--text-dark); margin-bottom:5px; line-height:1.3; }
+    .materi-card-sub { font-size:0.78rem; color:var(--text-muted); }
+    .materi-card-count { display:inline-flex; align-items:center; gap:5px; background:var(--green-50); color:var(--green-600); font-size:0.7rem; font-weight:700; padding:3px 10px; border-radius:99px; border:1px solid var(--green-200); margin-top:8px; }
+
+    .sub-list { display:flex; flex-direction:column; gap:10px; margin-bottom:14px; }
+    .sub-item { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius-lg); padding:18px 20px; cursor:pointer; display:flex; align-items:center; gap:14px; box-shadow:var(--shadow-sm); transition:all 0.2s cubic-bezier(.22,1,.36,1); }
+    .sub-item:hover { transform:translateY(-3px); box-shadow:0 8px 28px rgba(44,62,45,0.12); border-color:var(--green-300); background:var(--green-50); }
+    .sub-item-icon { width:42px; height:42px; border-radius:12px; background:var(--sage-bg); display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex-shrink:0; }
+    .sub-item-info { flex:1; }
+    .sub-item-title { font-weight:700; font-size:0.92rem; color:var(--text-dark); margin-bottom:3px; }
+    .sub-item-meta { font-size:0.75rem; color:var(--text-muted); }
+    .sub-item-arrow { color:var(--text-light); transition:transform 0.2s; }
+    .sub-item:hover .sub-item-arrow { color:var(--green-500); transform:translateX(3px); }
+
+    .file-list { display:flex; flex-direction:column; gap:9px; margin-bottom:14px; }
+    .file-item { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius); padding:16px 18px; cursor:pointer; display:flex; align-items:center; gap:12px; box-shadow:var(--shadow-sm); transition:all 0.2s cubic-bezier(.22,1,.36,1); }
+    .file-item:hover { transform:translateY(-2px); box-shadow:0 6px 22px rgba(44,62,45,0.11); border-color:var(--green-300); background:var(--green-50); }
+    .file-item-icon { width:36px; height:36px; border-radius:10px; background:var(--cream-deep); display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; border:1.5px solid var(--cream-border); }
+    .file-item-name { flex:1; font-weight:600; font-size:0.9rem; color:var(--text-dark); }
+    .file-item-path { font-size:0.72rem; color:var(--text-light); margin-top:2px; }
+
+    .breadcrumb { display:flex; align-items:center; gap:6px; font-size:0.78rem; color:var(--text-muted); margin-bottom:16px; flex-wrap:wrap; }
+    .breadcrumb-link { color:var(--green-600); font-weight:600; cursor:pointer; }
+    .breadcrumb-link:hover { text-decoration:underline; }
+    .breadcrumb-sep { color:var(--text-light); }
+    .breadcrumb-cur { color:var(--text-dark); font-weight:600; }
+
+    .back-btn { display:inline-flex; align-items:center; gap:7px; background:var(--cream-deep); border:1.5px solid var(--cream-border); border-radius:99px; padding:8px 16px; font-size:0.82rem; font-weight:600; color:var(--text-body); cursor:pointer; transition:all 0.2s; margin-bottom:16px; }
+    .back-btn:hover { background:var(--white); border-color:var(--green-300); color:var(--green-600); }
+
+    .mode-card { background:var(--white); border:2px solid var(--cream-border); border-radius:var(--radius-lg); padding:26px 22px; cursor:pointer; text-align:center; transition:all 0.25s cubic-bezier(.22,1,.36,1); box-shadow:var(--shadow-sm); }
+    .mode-card:hover { transform:translateY(-5px); box-shadow:0 12px 36px rgba(44,62,45,0.14); }
+    .mode-card.mode-quiz { border-color:var(--green-300); }
+    .mode-card.mode-quiz:hover { background:var(--green-50); border-color:var(--green-400); }
+    .mode-card.mode-belajar { border-color:#9c88c4; }
+    .mode-card.mode-belajar:hover { background:#f5f3fb; border-color:#7c6bab; }
+    .mode-card-icon { font-size:2.5rem; margin-bottom:12px; }
+    .mode-card-title { font-family:var(--font-display); font-size:1.15rem; font-weight:700; margin-bottom:6px; }
+    .mode-card-desc { font-size:0.82rem; color:var(--text-muted); line-height:1.55; }
+    .mode-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:20px; }
+    @media (max-width:400px) { .mode-grid { grid-template-columns:1fr; } }
+
+    /* ====== LEARN MODE ====== */
+    .learn-q-card { background:var(--white); border:1.5px solid var(--cream-border); border-radius:var(--radius-lg); padding:26px 24px; margin-bottom:14px; box-shadow:var(--shadow-sm); }
+    .learn-progress { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; font-size:0.82rem; color:var(--text-muted); font-weight:500; }
+    .learn-option { background:var(--cream); border:2px solid var(--cream-border); border-radius:var(--radius); padding:14px 16px; margin-bottom:10px; cursor:pointer; display:flex; align-items:flex-start; gap:10px; font-family:var(--font-body); font-size:0.9rem; color:var(--text-body); transition:all 0.18s; }
+    .learn-option:hover:not(.disabled) { border-color:var(--green-300); background:var(--green-50); transform:translateX(3px); }
+    .learn-option.correct-pick  { background:#e8f5e9; border-color:var(--green-400); color:var(--green-700); }
+    .learn-option.wrong-pick    { background:var(--danger-bg); border-color:var(--danger-light); color:var(--danger); }
+    .learn-option.reveal-correct{ background:#e8f5e9; border-color:var(--green-400); color:var(--green-700); opacity:0.7; }
+    .learn-option.disabled      { cursor:default; }
+    .learn-explanation { background:var(--sage-bg); border:1.5px solid var(--sage-light); border-radius:var(--radius); padding:14px 16px; margin-top:10px; font-size:0.86rem; color:var(--green-700); line-height:1.6; animation:fadeIn 0.3s ease both; }
+    .learn-explanation strong { display:block; margin-bottom:4px; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--sage); }
+    .learn-result { text-align:center; padding:40px 20px; }
+    .learn-result-icon { font-size:4rem; margin-bottom:12px; }
+    .learn-stat-row { display:flex; justify-content:center; gap:24px; margin:16px 0; flex-wrap:wrap; }
+    .learn-stat { text-align:center; }
+    .learn-stat-val { font-family:var(--font-display); font-size:1.8rem; font-weight:700; }
+    .learn-stat-lbl { font-size:0.72rem; color:var(--text-light); text-transform:uppercase; letter-spacing:0.04em; font-weight:600; }
+    .loading-state { text-align:center; padding:60px 20px; color:var(--text-muted); }
+    .loading-spinner { width:36px; height:36px; border:3px solid var(--cream-border); border-top-color:var(--green-400); border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 14px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+	
+	/* Hamburger button */
+	.nav-toggle {
+	  display: none;
+	  flex-direction: column;
+	  cursor: pointer;
+	  gap: 5px;
+	  background: none;
+	  border: none;
+	}
+
+	.nav-toggle span {
+	  width: 25px;
+	  height: 3px;
+	  background: var(--text-dark);
+	  border-radius: 2px;
+	}
+
+	/* Mobile */
+	@media (max-width: 768px) {
+		.topbar {
+			justify-content: flex-end;
+		}
+		.topbar .logo {
+			display: none;
+		}
+	}
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+  const { useState, useEffect, useRef } = React;
+
+  const fmt = (s) => { if(s<0)s=0; return `${Math.floor(s/60)}:${(s%60).toString().padStart(2,'0')}`; };
+  const getGrade = (pct) => {
+    if(pct>=90) return {label:'🌟 Sempurna!',    color:'#2e7d32',bg:'#e8f5e9'};
+    if(pct>=75) return {label:'🌿 Baik Sekali',  color:'#388e3c',bg:'#f0f7f0'};
+    if(pct>=60) return {label:'📗 Cukup Baik',   color:'#e67e22',bg:'#fef3e2'};
+    return             {label:'📖 Ayo Belajar Lagi',color:'#c0392b',bg:'#fdecea'};
+  };
+  const SK = 'quizbelajar_v2';
+  const loadH = () => { try { return JSON.parse(localStorage.getItem(SK)||'[]'); } catch { return []; } };
+  const saveH = (h) => { try { localStorage.setItem(SK, JSON.stringify(h)); } catch {} };
+
+  const Ic = ({size=15,style,children}) => (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={style}>{children}</svg>
+  );
+  const IPlay    = ({size}) => <Ic size={size||15}><polygon points="5 3 19 12 5 21 5 3"/></Ic>;
+  const IClock   = ({size}) => <Ic size={size||14}><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></Ic>;
+  const IHistory = ({size}) => <Ic size={size||14}><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.45"/></Ic>;
+  const IHome    = ({size}) => <Ic size={size||14}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></Ic>;
+  const ICheck   = ({size}) => <Ic size={size||13}><polyline points="20 6 9 17 4 12"/></Ic>;
+  const IX       = ({size}) => <Ic size={size||13}><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></Ic>;
+  const ITrash   = ({size}) => <Ic size={size||13}><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></Ic>;
+  const IChev    = ({open}) => <Ic size={13} style={{transition:'0.2s',transform:open?'rotate(180deg)':'none'}}><polyline points="6 9 12 15 18 9"/></Ic>;
+  const ILeaf    = ({size}) => <Ic size={size||14}><path d="M2 22c0 0 8-2 13-7s5-13 5-13-8 2-13 7S2 22 2 22z"/></Ic>;
+  const IBook    = ({size}) => <Ic size={size||14}><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></Ic>;
+  const IArrow   = ({size}) => <Ic size={size||14}><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></Ic>;
+  const IChevR   = ({size}) => <Ic size={size||13}><polyline points="9 18 15 12 9 6"/></Ic>;
+
+  const ScoreRing = ({pct,score,total}) => {
+    const r=54, circ=2*Math.PI*r, offset=circ*(1-pct/100), g=getGrade(pct);
+    return (
+      <div className="score-ring">
+        <svg width="140" height="140" viewBox="0 0 140 140">
+          <circle cx="70" cy="70" r={r} fill="none" stroke="#eef5eb" strokeWidth="12"/>
+          <circle cx="70" cy="70" r={r} fill="none" stroke={g.color}
+            strokeWidth="12" strokeDasharray={circ} strokeDashoffset={offset} strokeLinecap="round"/>
+        </svg>
+        <div className="score-value">
+          <div className="score-num" style={{color:g.color}}>{score}</div>
+          <div className="score-denom">dari {total}</div>
+        </div>
+      </div>
+    );
+  };
+
+  /* ====== MATERI DATA (static index) ====== */
+  const materiData = [
+    {
+      title: "Tes Pengetahuan Sawit",
+      key: "sawit",
+      icon: "🌴",
+      children: [
+        {
+          title: "Pembibitan",
+          icon: "🌱",
+          files: [
+            { name: "Pembibitan Dasar", path: "materi/tps/pembibitan/soal.txt" }
+          ]
+        },
+        {
+          title: "Kelembagaan",
+          icon: "🏩",
+          files: [
+            { name: "Kelembagaan Desa", path: "materi/tps/kelembagaan/kelembagaan-desa.txt" },
+			{ name: "Jenis-Jenis Kelembagaan", path: "materi/tps/kelembagaan/jenis-kelembagaan.txt" }
+          ]
+        },
+        {
+          title: "Pengetahuan Dasar",
+          icon: "🌴",
+          files: [
+            { name: "Mengenal istilah 1", path: "materi/tps/pengetahuan-dasar/soal1.txt" },
+			{ name: "Mengenal istilah 2", path: "materi/tps/pengetahuan-dasar/soal2.txt" }
+          ]
+        },
+        {
+          title: "Pupuk",
+          icon: "🪴",
+          files: [
+            { name: "Pemupukan", path: "materi/tps/pupuk/pemupukan.txt" },
+			{ name: "Jenis Pupuk", path: "materi/tps/pupuk/jenis-pupuk.txt" },
+			{ name: "Pupuk-pupuk 1", path: "materi/tps/pupuk/pupuk-pupuk1.txt" },
+			{ name: "Pupuk-pupuk 2", path: "materi/tps/pupuk/pupuk-pupuk2.txt" }
+          ]
+        },
+        {
+          title: "Taksonomi",
+          icon: "📊",
+          files: [
+            { name: "Mengenal Taksonomi Sawit", path: "materi/tps/taksonomi/soal.txt" }
+          ]
+        },
+        {
+          title: "BPDB",
+          icon: "🏩",
+          files: [
+            { name: "Mengenal Beasiswa Sawit", path: "materi/tps/bpdp/soal.txt" }
+          ]
+        },
+        {
+          title: "Petani Sawit",
+          icon: "👨‍🌾",
+          files: [
+            { name: "Jenis Petani-Petani Sawit", path: "materi/tps/petani/soal.txt" }
+          ]
+        },
+        {
+          title: "Kebun Sawit",
+          icon: "🏩",
+          files: [
+            { name: "Mengenal Kebun Sawit", path: "materi/tps/kebun/soal.txt" }
+          ]
+        },
+        {
+          title: "Kelapa Sawit",
+          icon: "🥥",
+          files: [
+            { name: "Mengenal Kelapa Sawit", path: "materi/tps/kelapa-sawit/soal.txt" }
+          ]
+        },
+        {
+          title: "Pekerjaan di Kebun Sawit",
+          icon: "👨‍🌾",
+          files: [
+            { name: "Mengenal Pekerjaan di Kebun Sawit", path: "materi/tps/pekerjaan/soal.txt" }
+          ]
+        },
+        {
+          title: "Hilirisasi",
+          icon: "🏭",
+          files: [
+            { name: "Hilirisasi Kelapa Sawit", path: "materi/tps/hilirisasi/soal.txt" }
+          ]
+        },
+        {
+          title: "Jamur & Hama",
+          icon: "🦠",
+          files: [
+            { name: "Jamur dan Penyakit", path: "materi/tps/jamur-hama/jamur.txt" },
+			{ name: "Hama", path: "materi/tps/jamur-hama/hama.txt" }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Pengetahuan Umum",
+      key: "umum",
+      icon: "📚",
+      children: [
+        {
+          title: "Matematika Dasar",
+          icon: "🔢",
+          files: [
+            { name: "Soal Aritmatika", path: "materi/pengetahuan umum/matematika/soal1.txt" }
+          ]
+        },
+        {
+          title: "Bahasa Indonesia",
+          icon: "📝",
+          files: [
+            { name: "Soal EYD & Tata Bahasa", path: "materi/pengetahuan umum/bahasa/soal1.txt" }
+          ]
+        }
+      ]
+    }
+  ];
+
+  const App = () => {
+    const [screen,setScreen]           = useState('setup');
+    const [currentQ,setCurrentQ]       = useState(0);
+    const [answers,setAnswers]         = useState({});
+    const [questions,setQuestions]     = useState([]);
+    const [configMin,setConfigMin]     = useState(6);
+    const [configSPQ,setConfigSPQ]     = useState(30);
+    const [totalTime,setTotalTime]     = useState(360);
+    const [timeLeft,setTimeLeft]       = useState(360);
+    const [perQElapsed,setPerQElapsed] = useState(0);
+    const [running,setRunning]         = useState(false);
+    const [fileName,setFileName]       = useState('');
+    const [uploadErr,setUploadErr]     = useState('');
+    const [history,setHistory]         = useState(loadH);
+    const [showReview,setShowReview]   = useState(false);
+    const [showFmt,setShowFmt]         = useState(false);
+    const [expandHist,setExpandHist]   = useState(null);
+    const [clearConfirm,setClearConfirm] = useState(false);
+    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [selectedSub, setSelectedSub]           = useState(null);
+    const [materiView, setMateriView]             = useState('categories'); // categories | sub | files
+    const [materiLoading, setMateriLoading]       = useState(false);
+    const [materiError, setMateriError]           = useState('');
+    // learn mode
+    const [learnMode, setLearnMode]               = useState(false); // false=quiz, true=learn
+    const [learnIdx, setLearnIdx]                 = useState(0);
+    const [learnPicked, setLearnPicked]           = useState(null); // selected option id
+    const [learnAnswers, setLearnAnswers]         = useState([]); // array of {picked, correct}
+    const [learnDone, setLearnDone]               = useState(false);
+    const perQRef = useRef(0);
+    const timRef  = useRef({});
+
+    useEffect(() => {
+      if(!running||screen!=='quiz') return;
+      if(timeLeft<=0){finish();return;}
+      const t=setTimeout(()=>setTimeLeft(s=>s-1),1000);
+      return ()=>clearTimeout(t);
+    },[timeLeft,running,screen]);
+
+    useEffect(() => {
+      if(!running||screen!=='quiz') return;
+      const t=setTimeout(()=>setPerQElapsed(s=>{const n=s+1;perQRef.current=n;return n;}),1000);
+      return ()=>clearTimeout(t);
+    },[perQElapsed,running,screen]);
+
+    useEffect(() => {
+      if(running&&screen==='quiz'){
+        timRef.current[currentQ]=(timRef.current[currentQ]||0)+perQRef.current;
+        setPerQElapsed(0); perQRef.current=0;
+      }
+    },[currentQ]);
+
+    const parse = (text) => {
+      const lines=text.trim().split('\n').filter(l=>l.trim());
+      const out=[]; let cur=null;
+      for(const raw of lines){
+        const line=raw.trim();
+        if(line.match(/^\d+\./)){
+          if(cur&&cur.options.length>=2)out.push(cur);
+          cur={question:line.replace(/^\d+\.\s*/,''),options:[],correctAnswer:null,explanation:''};
+        } else if(line.match(/^[a-d]\./i)&&cur){
+          const id=line[0].toLowerCase();
+          const txt=line.replace(/^[a-d]\.\s*/i,'');
+          const ok=txt.includes('*')||/\(benar\)/i.test(txt);
+          cur.options.push({id,text:txt.replace(/\*/g,'').replace(/\(benar\)/gi,'').trim()});
+          if(ok)cur.correctAnswer=id;
+        } else if(line.match(/^explanation:/i)&&cur){
+          cur.explanation=line.replace(/^explanation:\s*/i,'').trim();
+        }
+      }
+      if(cur&&cur.options.length>=2)out.push(cur);
+      return out;
+    };
+
+    const handleFile = (e) => {
+      const file=e.target.files[0]; if(!file)return;
+      if(!file.name.endsWith('.txt')){setUploadErr('Hanya file .txt yang diperbolehkan');return;}
+      setFileName(file.name);
+      const reader=new FileReader();
+      reader.onload=(ev)=>{
+        const parsed=parse(ev.target.result);
+        if(!parsed.length){setUploadErr('Tidak ada soal valid ditemukan');return;}
+        const noAns=parsed.filter(q=>!q.correctAnswer).length;
+        if(noAns){setUploadErr(`${noAns} soal tidak memiliki jawaban bertanda (*)`);return;}
+        setQuestions(parsed); setUploadErr('');
+      };
+      reader.readAsText(file,'UTF-8');
+    };
+
+    const start = () => {
+      const secs=configMin*60;
+      setTotalTime(secs); setTimeLeft(secs);
+      setPerQElapsed(0); perQRef.current=0; timRef.current={};
+      setAnswers({}); setCurrentQ(0); setRunning(true); setScreen('quiz');
+    };
+
+    const finish = () => {
+      timRef.current[currentQ]=(timRef.current[currentQ]||0)+perQRef.current;
+      setRunning(false);
+      const timeUsed=totalTime-timeLeft;
+      const score=questions.reduce((a,q,i)=>answers[i]===q.correctAnswer?a+1:a,0);
+      const pct=Math.round((score/questions.length)*100);
+      const entry={id:Date.now(),date:new Date().toLocaleString('id-ID'),fileName:fileName||'Manual',
+        totalQ:questions.length,score,pct,timeUsed,timeLimit:totalTime,
+        perQTimings:{...timRef.current},answers:{...answers},
+        questions:questions.map(q=>({...q}))};
+      const newH=[entry,...history].slice(0,50);
+      setHistory(newH); saveH(newH);
+      setScreen('result'); setShowReview(false);
+    };
+
+    const reset = () => { setScreen('setup'); setCurrentQ(0); setAnswers({}); setRunning(false); setTimeLeft(configMin*60); };
+    const clearAll = () => { setHistory([]); saveH([]); setClearConfirm(false); setExpandHist(null); };
+
+    const loadFromFile = async (file) => {
+      setMateriLoading(true); setMateriError('');
+      try {
+        const res = await fetch(file.path);
+        if(!res.ok) throw new Error(`HTTP ${res.status}`);
+        const text = await res.text();
+        const parsed = parse(text);
+        if(!parsed.length) throw new Error('Tidak ada soal valid ditemukan');
+        setQuestions(parsed);
+        setFileName(file.name);
+        setMateriLoading(false);
+        setScreen('mode');
+      } catch(err) {
+        setMateriLoading(false);
+        setMateriError(`Gagal memuat file: ${err.message}. Pastikan file tersedia di server.`);
+      }
+    };
+
+    const startLearnMode = () => {
+      setLearnIdx(0); setLearnPicked(null); setLearnAnswers([]); setLearnDone(false);
+      setLearnMode(true); setScreen('learn');
+    };
+
+    const startQuizMode = () => {
+      setLearnMode(false);
+      start();
+    };
+
+    const learnNext = () => {
+      const q = questions[learnIdx];
+      const newAnswers = [...learnAnswers, {picked: learnPicked, correct: q.correctAnswer}];
+      setLearnAnswers(newAnswers);
+      if(learnIdx >= questions.length - 1){
+        setLearnDone(true);
+      } else {
+        setLearnIdx(i=>i+1);
+        setLearnPicked(null);
+      }
+    };
+
+    const resetMateri = () => {
+      setSelectedCategory(null); setSelectedSub(null);
+      setMateriView('categories'); setMateriError('');
+    };
+
+    const timerClass = timeLeft<=60?'danger':timeLeft/totalTime<=0.3?'warning':'';
+    const perQFillPct = Math.min(100,(perQElapsed/configSPQ)*100);
+    const perQOver = perQElapsed>=configSPQ;
+    const perQWarn = perQElapsed>=configSPQ*0.7;
+    const perQColor = perQOver?'var(--danger)':perQWarn?'var(--warning)':'var(--green-400)';
+    const answeredCount = Object.keys(answers).length;
+
+    /* ====== SETUP ====== */
+    if(screen==='setup') return (
+      <div className="screen">
+        <div className="topbar container">
+          <div className="logo"><span className="logo-leaf">🌿</span> Quiz Scholarship</div>
+          <div className="topbar-nav">
+            <button className="nav-btn active"><IHome/> Beranda</button>
+            <button className="nav-btn" onClick={()=>{resetMateri();setScreen('materi');}}><IBook/> Materi</button>
+            <button className="nav-btn" onClick={()=>setScreen('history')}><IHistory/> Riwayat</button>
+          </div>
+        </div>
+        <div className="container">
+          <div className="card au" style={{borderColor:'#b8dfb8',background:'linear-gradient(135deg,#f9fdf7,#eef8ec)'}}>
+            <p className="section-label section-label-g">🌱 Selamat Datang</p>
+            <h1 className="hero-title">Belajar dengan<br/><em>Tenang & Fokus</em></h1>
+            <p className="hero-sub">Upload soal kamu, atur waktu, dan mulai berlatih. Setiap soal yang kamu kerjakan adalah satu langkah menuju pemahaman yang lebih dalam.</p>
+            {history.length>0&&(
+              <div className="streak-pill"><ILeaf size={13}/> Kuis terakhir: <strong>{history[0].pct}%</strong> — {history[0].fileName}</div>
+            )}
+          </div>
+
+          <div className="card au d1">
+            <p className="section-label">⏱ Pengaturan Waktu</p>
+            <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:12}}>
+              <div>
+                <p className="field-label"><IClock size={13}/> Total Waktu (menit)</p>
+                <input className="input-field input-num" type="number" min={1} max={180} value={configMin}
+                  onChange={e=>setConfigMin(Math.max(1,parseInt(e.target.value)||1))}/>
+              </div>
+              <div>
+                <p className="field-label"><IClock size={13}/> Estimasi per Soal (dtk)</p>
+                <input className="input-field input-num" type="number" min={10} max={300} value={configSPQ}
+                  onChange={e=>setConfigSPQ(Math.max(10,parseInt(e.target.value)||30))}/>
+              </div>
+            </div>
+            <div className="alert alert-info" style={{marginTop:12}}>
+              <ILeaf size={12}/> Timer per soal bersifat peringatan — soal tidak di-skip otomatis
+            </div>
+          </div>
+
+          <div className="card au d2">
+            <p className="section-label">📂 Upload File Soal</p>
+            <div className="file-drop">
+              <input type="file" accept=".txt" onChange={handleFile}/>
+              <div className="file-drop-icon">{fileName?'📋':'📄'}</div>
+              <p className="file-drop-text">
+                {fileName?<><strong style={{color:'var(--green-600)'}}>{fileName}</strong></>:<><strong>Klik atau seret</strong> file .txt ke sini</>}
+              </p>
+            </div>
+            {uploadErr&&<div className="alert alert-danger"><IX size={12}/> {uploadErr}</div>}
+            {questions.length>0&&<div className="alert alert-success"><ICheck size={12}/> {questions.length} soal siap dikerjakan</div>}
+            <div className="divider"/>
+            <button className="collapse-btn" onClick={()=>setShowFmt(s=>!s)}>
+              <span>📋 Format File TXT</span><IChev open={showFmt}/>
+            </button>
+            {showFmt&&(
+              <div style={{marginTop:12}}>
+                <div className="format-box">
+                  <span className="kw">1.</span> Apa ibu kota Indonesia?<br/>
+                  <span className="kw">a.</span> Bandung<br/>
+                  <span className="correct">b. Jakarta *</span><br/>
+                  <span className="kw">c.</span> Surabaya<br/>
+                  <span className="kw">d.</span> Medan
+                </div>
+                <p style={{fontSize:'0.76rem',color:'var(--text-light)',marginTop:8}}>Tandai jawaban benar dengan <strong style={{color:'var(--green-600)'}}>*</strong> atau <strong style={{color:'var(--green-600)'}}>(benar)</strong></p>
+              </div>
+            )}
+          </div>
+
+          <button className="btn btn-primary au d3" onClick={start} disabled={questions.length===0}>
+            <IPlay size={17}/> Mulai Belajar
+          </button>
+        </div>
+      </div>
+    );
+
+    /* ====== QUIZ ====== */
+    if(screen==='quiz'){
+      const q=questions[currentQ];
+      const progress=((currentQ+1)/questions.length)*100;
+      return (
+        <div className="screen" style={{paddingTop:14}}>
+          <div className="container">
+            <div className="quiz-header">
+              <div className="q-counter">Soal <strong>{currentQ+1}</strong> dari <strong>{questions.length}</strong></div>
+              <div className={`timer-pill ${timerClass}`}><div className="timer-dot"/>{fmt(timeLeft)}</div>
+            </div>
+            <div className="progress-track">
+              <div className="progress-fill" style={{width:`${progress}%`}}/>
+            </div>
+            <div className="nav-dots">
+              {questions.map((_,i)=>(
+                <button key={i} className={`nav-dot ${i===currentQ?'current':answers[i]?'answered':'unanswered'}`}
+                  onClick={()=>setCurrentQ(i)}>{i+1}</button>
+              ))}
+            </div>
+            <div className="per-q-row">
+              <span style={{display:'flex',alignItems:'center',gap:5,color:perQColor}}>
+                <IClock size={11}/> Soal ini: <strong>{fmt(perQElapsed)}</strong>
+                {perQOver&&<span style={{fontWeight:700}}> ⚠ Melebihi estimasi!</span>}
+              </span>
+              <span>Terjawab: <strong style={{color:'var(--green-600)'}}>{answeredCount}</strong>/{questions.length}</span>
+            </div>
+            <div className="progress-track" style={{marginBottom:14,height:4}}>
+              <div style={{height:'100%',borderRadius:99,width:`${perQFillPct}%`,background:perQColor,transition:'width 0.9s linear,background 0.4s'}}/>
+            </div>
+            <div className="question-box fi">
+              <div className="q-badge"><ILeaf size={10}/> Pertanyaan {currentQ+1}</div>
+              <div className="question-text">{q.question}</div>
+            </div>
+            <div className="options-grid">
+              {q.options.map(opt=>(
+                <button key={opt.id} className={`option-btn ${answers[currentQ]===opt.id?'selected':''}`}
+                  onClick={()=>setAnswers(p=>({...p,[currentQ]:opt.id}))}>
+                  <span className="option-letter">{opt.id.toUpperCase()}</span>
+                  <span>{opt.text}</span>
+                </button>
+              ))}
+            </div>
+            <div className="quiz-footer">
+              {currentQ>0&&<button className="btn btn-secondary" onClick={()=>setCurrentQ(i=>i-1)}>← Sebelumnya</button>}
+              {currentQ<questions.length-1
+                ?<button className="btn btn-primary" style={{borderRadius:'var(--radius)'}} onClick={()=>setCurrentQ(i=>i+1)}>Selanjutnya →</button>
+                :<button className="btn btn-finish" onClick={finish}><ICheck size={14}/> Selesaikan Kuis</button>
+              }
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    /* ====== RESULT ====== */
+    if(screen==='result'&&history.length>0){
+      const entry=history[0];
+      const {score,totalQ,pct,timeUsed,questions:qS,answers:ans,perQTimings:qt}=entry;
+      const g=getGrade(pct);
+      const wrong=qS.filter((q,i)=>ans[i]&&ans[i]!==q.correctAnswer).length;
+      const skipped=qS.filter((_,i)=>!ans[i]).length;
+      return (
+        <div className="screen">
+          <div className="topbar container">
+            <div className="logo"><span className="logo-leaf">🌿</span> QuizBelajar</div>
+            <button className="nav-btn" onClick={()=>setScreen('history')}><IHistory/> Riwayat</button>
+          </div>
+          <div className="container">
+            <div className="card au" style={{textAlign:'center',borderColor:g.color+'55',background:`linear-gradient(160deg,var(--white),${g.bg})`}}>
+              <p className="section-label">✅ Kuis Selesai!</p>
+              <ScoreRing pct={pct} score={score} total={totalQ}/>
+              <div className="grade-pill" style={{background:g.bg,color:g.color,marginBottom:6}}>{g.label}</div>
+              <p style={{fontFamily:'var(--font-display)',fontSize:'2rem',fontWeight:700,marginBottom:4}}>{pct}%</p>
+              <p style={{fontSize:'0.82rem',color:'var(--text-light)',display:'flex',alignItems:'center',justifyContent:'center',gap:5}}>
+                <IClock size={12}/> Waktu: <strong>{fmt(timeUsed)}</strong>
+              </p>
+            </div>
+            <div className="stats-row au d1">
+              <div className="stat-box"><div className="stat-val" style={{color:'var(--green-600)'}}>{score}</div><div className="stat-lbl">Benar</div></div>
+              <div className="stat-box"><div className="stat-val" style={{color:'var(--danger)'}}>{wrong}</div><div className="stat-lbl">Salah</div></div>
+              <div className="stat-box"><div className="stat-val" style={{color:'var(--warning)'}}>{skipped}</div><div className="stat-lbl">Dilewati</div></div>
+            </div>
+            <div className="card au d2">
+              <button className="collapse-btn" onClick={()=>setShowReview(s=>!s)}>
+                <span style={{fontFamily:'var(--font-display)',fontSize:'1rem'}}>📋 Review Jawaban</span>
+                <IChev open={showReview}/>
+              </button>
+              {showReview&&(
+                <div className="scrollable" style={{marginTop:14}}>
+                  <div className="review-list">
+                    {qS.map((q,i)=>{
+                      const ua=ans[i],ok=ua===q.correctAnswer,sk=!ua;
+                      const uaTxt=ua?q.options.find(o=>o.id===ua)?.text:null;
+                      const caTxt=q.options.find(o=>o.id===q.correctAnswer)?.text;
+                      const qTime=qt?.[i]||0;
+                      return (
+                        <div key={i} className={`review-item ${sk?'skipped':ok?'correct':'wrong'}`}>
+                          <div className="review-q">{i+1}. {q.question}</div>
+                          <div className="review-ans">
+                            {sk?<span className="badge badge-skip">⚠ Tidak dijawab</span>
+                              :ok?<span className="badge badge-ok"><ICheck size={10}/> {ua?.toUpperCase()}. {uaTxt}</span>
+                              :<><span className="badge badge-no"><IX size={10}/> {ua?.toUpperCase()}. {uaTxt}</span>
+                                 <span className="badge badge-ok"><ICheck size={10}/> {q.correctAnswer?.toUpperCase()}. {caTxt}</span></>}
+                            <span style={{marginLeft:'auto',fontSize:'0.7rem',color:'var(--text-light)',display:'flex',alignItems:'center',gap:3}}>
+                              <IClock size={10}/> {fmt(qTime)}
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div style={{display:'flex',gap:10}} className="au d3">
+              <button className="btn btn-secondary" style={{flex:1}} onClick={()=>setScreen('history')}><IHistory size={13}/> Riwayat</button>
+              <button className="btn btn-primary" style={{flex:2,borderRadius:'var(--radius)'}} onClick={reset}><IPlay size={14}/> Kuis Baru</button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    /* ====== HISTORY ====== */
+    if(screen==='history'){
+      const avg=history.length?Math.round(history.reduce((a,h)=>a+h.pct,0)/history.length):0;
+      const best=history.length?Math.max(...history.map(h=>h.pct)):0;
+      const avgTime=history.length?Math.round(history.reduce((a,h)=>a+h.timeUsed,0)/history.length):0;
+      return (
+        <div className="screen">
+          <div className="topbar container">
+            <div className="logo"><span className="logo-leaf">🌿</span> Quiz Scholarship</div>
+            <div className="topbar-nav">
+              <button className="nav-btn" onClick={()=>setScreen('setup')}><IHome/> Beranda</button>
+              <button className="nav-btn" onClick={()=>{resetMateri();setScreen('materi');}}><IBook/> Materi</button>
+              <button className="nav-btn active"><IHistory/> Riwayat</button>
+            </div>
+          </div>
+          <div className="container">
+            <div className="au" style={{marginBottom:16}}>
+              <p className="section-label section-label-g">📊 Perkembanganmu</p>
+              <h2 style={{fontFamily:'var(--font-display)',fontSize:'1.7rem',fontWeight:700,letterSpacing:'-0.3px'}}>Riwayat Belajar</h2>
+            </div>
+            {history.length>0?(
+              <>
+                <div className="overview-grid au d1">
+                  <div className="overview-card"><div className="overview-val" style={{color:'var(--green-500)'}}>{history.length}</div><div className="overview-lbl">Total Sesi</div></div>
+                  <div className="overview-card"><div className="overview-val" style={{color:'var(--green-600)'}}>{best}%</div><div className="overview-lbl">Skor Terbaik</div></div>
+                  <div className="overview-card"><div className="overview-val" style={{color:'#795548'}}>{avg}%</div><div className="overview-lbl">Rata-rata</div></div>
+                  <div className="overview-card"><div className="overview-val" style={{color:'var(--text-body)'}}>{fmt(avgTime)}</div><div className="overview-lbl">Rata-rata Waktu</div></div>
+                </div>
+
+                <div className="card au d2" style={{marginBottom:14}}>
+                  <p className="section-label">📈 Tren Skor (10 Terakhir)</p>
+                  <div style={{display:'flex',alignItems:'flex-end',gap:6,height:52}}>
+                    {history.slice(0,10).reverse().map((h,i)=>{
+                      const bh=Math.max(4,(h.pct/100)*52), g=getGrade(h.pct);
+                      return (
+                        <div key={i} style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',gap:3}}>
+                          <div style={{width:'100%',height:bh,background:g.color,borderRadius:5,opacity:0.75,
+                            animation:`barIn 0.5s ${i*0.06}s cubic-bezier(.22,1,.36,1) both`}}/>
+                          <span style={{fontSize:'0.58rem',color:'var(--text-light)'}}>{h.pct}%</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div className="history-list au d3">
+                  {history.map((h,i)=>{
+                    const g=getGrade(h.pct), expanded=expandHist===h.id;
+                    return (
+                      <div key={h.id}>
+                        <div className="history-card" onClick={()=>setExpandHist(expanded?null:h.id)}>
+                          <div className="history-rank" style={{background:g.bg,color:g.color}}>#{i+1}</div>
+                          <div className="history-info">
+                            <div className="history-title">{h.fileName}</div>
+                            <div className="history-meta">
+                              <span><IClock size={10}/> {fmt(h.timeUsed)}</span>
+                              <span>🗓 {h.date}</span>
+                              <span>📝 {h.totalQ} soal</span>
+                            </div>
+                            <div className="mini-bar"><div className="mini-fill" style={{width:`${h.pct}%`,background:g.color}}/></div>
+                          </div>
+                          <div style={{textAlign:'right'}}>
+                            <div className="history-score-badge" style={{color:g.color}}>{h.pct}%</div>
+                            <div style={{fontSize:'0.7rem',color:'var(--text-light)'}}>{h.score}/{h.totalQ}</div>
+                          </div>
+                        </div>
+                        {expanded&&h.questions&&(
+                          <div style={{background:'var(--cream)',border:'1.5px solid var(--cream-border)',borderTop:'none',borderRadius:'0 0 var(--radius-lg) var(--radius-lg)',padding:'14px 18px',animation:'fadeIn 0.3s ease both'}}>
+                            <p style={{fontSize:'0.75rem',color:'var(--text-light)',marginBottom:10,fontWeight:600}}>Detail Jawaban:</p>
+                            <div className="scrollable" style={{maxHeight:220}}>
+                              <div className="review-list">
+                                {h.questions.map((q,qi)=>{
+                                  const ua=h.answers[qi],ok=ua===q.correctAnswer,sk=!ua;
+                                  return (
+                                    <div key={qi} className={`review-item ${sk?'skipped':ok?'correct':'wrong'}`}>
+                                      <div className="review-q" style={{fontSize:'0.8rem'}}>{qi+1}. {q.question}</div>
+                                      <div className="review-ans">
+                                        {sk?<span className="badge badge-skip">Dilewati</span>
+                                          :ok?<span className="badge badge-ok"><ICheck size={10}/> {ua?.toUpperCase()}. {q.options.find(o=>o.id===ua)?.text}</span>
+                                          :<><span className="badge badge-no"><IX size={10}/> {ua?.toUpperCase()}. {q.options.find(o=>o.id===ua)?.text}</span>
+                                             <span className="badge badge-ok"><ICheck size={10}/> {q.correctAnswer?.toUpperCase()}. {q.options.find(o=>o.id===q.correctAnswer)?.text}</span></>}
+                                      </div>
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div style={{marginTop:20,textAlign:'center'}} className="au d4">
+                  {!clearConfirm
+                    ?<button className="btn btn-danger" onClick={()=>setClearConfirm(true)}><ITrash/> Hapus Semua Riwayat</button>
+                    :<div style={{display:'flex',gap:8,justifyContent:'center'}}>
+                       <button className="btn btn-secondary" style={{flex:1}} onClick={()=>setClearConfirm(false)}>Batal</button>
+                       <button className="btn btn-danger btn-danger-solid" style={{flex:1}} onClick={clearAll}><ITrash/> Ya, Hapus</button>
+                     </div>
+                  }
+                </div>
+              </>
+            ):(
+              <div className="history-empty au">
+                <div style={{fontSize:'3rem',marginBottom:12}}>🌱</div>
+                <p style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.1rem',marginBottom:6,color:'var(--text-body)'}}>Belum Ada Riwayat</p>
+                <p style={{fontSize:'0.85rem',marginBottom:20}}>Selesaikan kuis pertamamu dan lacak perkembanganmu!</p>
+                <button className="btn btn-primary" style={{width:'auto',padding:'12px 28px'}} onClick={()=>setScreen('setup')}>
+                  <IPlay size={14}/> Mulai Sekarang
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      );
+    }
+    /* ====== MATERI ====== */
+    if(screen==='materi'){
+      const renderBreadcrumb = () => (
+        <div className="breadcrumb">
+          <span className="breadcrumb-link" onClick={resetMateri}>Materi</span>
+          {selectedCategory&&<><span className="breadcrumb-sep">›</span>
+            <span className={!selectedSub?'breadcrumb-cur':'breadcrumb-link'}
+              onClick={()=>{setSelectedSub(null);setMateriView('sub');setMateriError('');}}>{selectedCategory.title}</span></>}
+          {selectedSub&&<><span className="breadcrumb-sep">›</span>
+            <span className="breadcrumb-cur">{selectedSub.title}</span></>}
+        </div>
+      );
+      return (
+        <div className="screen">
+          <div className="topbar container">
+            <div className="logo"><span className="logo-leaf">🌿</span> Quiz Scholarship</div>
+            <div className="topbar-nav">
+              <button className="nav-btn" onClick={()=>setScreen('setup')}><IHome/> Beranda</button>
+              <button className="nav-btn active"><IBook/> Materi</button>
+              <button className="nav-btn" onClick={()=>setScreen('history')}><IHistory/> Riwayat</button>
+            </div>
+          </div>
+          <div className="container">
+            <div className="au" style={{marginBottom:16}}>
+              <p className="section-label section-label-g">📚 Bank Soal</p>
+              <h2 style={{fontFamily:'var(--font-display)',fontSize:'1.7rem',fontWeight:700,letterSpacing:'-0.3px'}}>Pilih Materi</h2>
+            </div>
+
+            {renderBreadcrumb()}
+
+            {materiError&&(
+              <div className="alert alert-danger au" style={{marginBottom:14}}>
+                <IX size={13}/> {materiError}
+              </div>
+            )}
+
+            {materiLoading&&(
+              <div className="loading-state au">
+                <div className="loading-spinner"/>
+                <p>Memuat soal...</p>
+              </div>
+            )}
+
+            {/* Categories */}
+            {!materiLoading && materiView==='categories'&&(
+              <div className="materi-grid au d1">
+                {materiData.map((cat,i)=>(
+                  <div key={cat.key} className="materi-card" style={{animationDelay:`${i*0.07}s`}}
+                    onClick={()=>{setSelectedCategory(cat);setMateriView('sub');setMateriError('');}}>
+                    <div className="materi-card-icon">{cat.icon}</div>
+                    <div className="materi-card-title">{cat.title}</div>
+                    <div className="materi-card-sub">{cat.children.length} submateri tersedia</div>
+                    <div className="materi-card-count">
+                      <IBook size={11}/>
+                      {cat.children.reduce((a,s)=>a+s.files.length,0)} file soal
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Sub categories */}
+            {!materiLoading && materiView==='sub'&&selectedCategory&&(
+              <>
+                <button className="back-btn au" onClick={resetMateri}>
+                  <Ic size={13}><polyline points="15 18 9 12 15 6"/></Ic> Kembali ke Kategori
+                </button>
+                <div className="card au d1" style={{marginBottom:14,borderColor:'var(--green-200)',background:'linear-gradient(135deg,#f9fdf7,#eef8ec)'}}>
+                  <div style={{display:'flex',alignItems:'center',gap:12}}>
+                    <span style={{fontSize:'2rem'}}>{selectedCategory.icon}</span>
+                    <div>
+                      <p className="section-label">Kategori</p>
+                      <p style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.1rem',color:'var(--text-dark)'}}>{selectedCategory.title}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="sub-list">
+                  {selectedCategory.children.map((sub,i)=>(
+                    <div key={sub.title} className="sub-item au" style={{animationDelay:`${i*0.06}s`}}
+                      onClick={()=>{setSelectedSub(sub);setMateriView('files');setMateriError('');}}>
+                      <div className="sub-item-icon">{sub.icon}</div>
+                      <div className="sub-item-info">
+                        <div className="sub-item-title">{sub.title}</div>
+                        <div className="sub-item-meta">{sub.files.length} file soal tersedia</div>
+                      </div>
+                      <div className="sub-item-arrow"><IChevR/></div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+
+            {/* File list */}
+            {!materiLoading && materiView==='files'&&selectedSub&&(
+              <>
+                <button className="back-btn au" onClick={()=>{setSelectedSub(null);setMateriView('sub');setMateriError('');}}>
+                  <Ic size={13}><polyline points="15 18 9 12 15 6"/></Ic> Kembali ke Submateri
+                </button>
+                <div className="card au d1" style={{marginBottom:14,background:'var(--sage-bg)',borderColor:'var(--sage-light)'}}>
+                  <div style={{display:'flex',alignItems:'center',gap:12}}>
+                    <span style={{fontSize:'1.8rem'}}>{selectedSub.icon}</span>
+                    <div>
+                      <p className="section-label">Submateri</p>
+                      <p style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.05rem',color:'var(--text-dark)'}}>{selectedSub.title}</p>
+                    </div>
+                  </div>
+                </div>
+                <p className="section-label" style={{marginBottom:10}}>Pilih file soal:</p>
+                <div className="file-list">
+                  {selectedSub.files.map((file,i)=>(
+                    <div key={file.path} className="file-item au" style={{animationDelay:`${i*0.06}s`}}
+                      onClick={()=>loadFromFile(file)}>
+                      <div className="file-item-icon">📄</div>
+                      <div style={{flex:1}}>
+                        <div className="file-item-name">{file.name}</div>
+                        <div className="file-item-path">{file.path}</div>
+                      </div>
+                      <IArrow size={14}/>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    /* ====== MODE SELECTION ====== */
+    if(screen==='mode'){
+      return (
+        <div className="screen">
+          <div className="topbar container">
+            <div className="logo"><span className="logo-leaf">🌿</span> Quiz Scholarship</div>
+            <div className="topbar-nav">
+              <button className="nav-btn" onClick={()=>setScreen('materi')}><IBook/> Materi</button>
+              <button className="nav-btn" onClick={()=>setScreen('setup')}><IHome/> Beranda</button>
+            </div>
+          </div>
+          <div className="container">
+            <div className="au" style={{marginBottom:20}}>
+              <p className="section-label section-label-g">✅ Soal Dimuat</p>
+              <h2 style={{fontFamily:'var(--font-display)',fontSize:'1.7rem',fontWeight:700,letterSpacing:'-0.3px'}}>Pilih Mode Belajar</h2>
+            </div>
+            <div className="card au d1" style={{marginBottom:20,borderColor:'var(--green-200)',background:'linear-gradient(135deg,#f9fdf7,#eef8ec)'}}>
+              <div style={{display:'flex',alignItems:'center',gap:12}}>
+                <span style={{fontSize:'2rem'}}>📋</span>
+                <div>
+                  <p className="section-label">File Soal Siap</p>
+                  <p style={{fontFamily:'var(--font-display)',fontWeight:700,fontSize:'1.05rem',color:'var(--text-dark)'}}>{fileName}</p>
+                  <p style={{fontSize:'0.8rem',color:'var(--text-muted)',marginTop:3}}>{questions.length} soal tersedia</p>
+                </div>
+              </div>
+            </div>
+            <div className="mode-grid au d2">
+              <div className="mode-card mode-quiz" onClick={startQuizMode}>
+                <div className="mode-card-icon">⏱️</div>
+                <div className="mode-card-title" style={{color:'var(--green-700)'}}>Mode Kuis</div>
+                <div className="mode-card-desc">Kerjakan soal dengan timer, lalu lihat skor dan rekap akhirmu</div>
+              </div>
+              <div className="mode-card mode-belajar" onClick={startLearnMode}>
+                <div className="mode-card-icon">📖</div>
+                <div className="mode-card-title" style={{color:'#5c4a9a'}}>Mode Belajar</div>
+                <div className="mode-card-desc">Jawab soal tanpa tekanan waktu, lihat langsung jawaban benar & penjelasannya</div>
+              </div>
+            </div>
+            <button className="btn btn-secondary au d3" onClick={()=>setScreen('materi')}>
+              <Ic size={13}><polyline points="15 18 9 12 15 6"/></Ic> Kembali ke Materi
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    /* ====== LEARN MODE ====== */
+    if(screen==='learn'){
+      if(learnDone){
+        const correct = learnAnswers.filter(a=>a.picked===a.correct).length;
+        const pct = Math.round((correct/questions.length)*100);
+        const g = getGrade(pct);
+        return (
+          <div className="screen">
+            <div className="topbar container">
+              <div className="logo"><span className="logo-leaf">🌿</span> QuizBelajar</div>
+              <button className="nav-btn" onClick={()=>setScreen('setup')}><IHome/> Beranda</button>
+            </div>
+            <div className="container">
+              <div className="card au" style={{textAlign:'center',borderColor:g.color+'55',background:`linear-gradient(160deg,var(--white),${g.bg})`}}>
+                <p className="section-label">📖 Sesi Belajar Selesai!</p>
+                <div className="learn-result-icon">🎓</div>
+                <ScoreRing pct={pct} score={correct} total={questions.length}/>
+                <div className="grade-pill" style={{background:g.bg,color:g.color,marginBottom:6}}>{g.label}</div>
+                <p style={{fontFamily:'var(--font-display)',fontSize:'2rem',fontWeight:700}}>{pct}%</p>
+              </div>
+              <div className="stats-row au d1">
+                <div className="stat-box"><div className="stat-val" style={{color:'var(--green-600)'}}>{correct}</div><div className="stat-lbl">Benar</div></div>
+                <div className="stat-box"><div className="stat-val" style={{color:'var(--danger)'}}>{questions.length-correct}</div><div className="stat-lbl">Salah</div></div>
+                <div className="stat-box"><div className="stat-val" style={{color:'#795548'}}>{questions.length}</div><div className="stat-lbl">Total</div></div>
+              </div>
+              <div className="card au d2">
+                <p className="section-label">📋 Review Soal</p>
+                <div className="scrollable" style={{marginTop:10}}>
+                  <div className="review-list">
+                    {questions.map((q,i)=>{
+                      const la=learnAnswers[i]; if(!la)return null;
+                      const ok=la.picked===la.correct;
+                      const caTxt=q.options.find(o=>o.id===la.correct)?.text;
+                      const paTxt=la.picked?q.options.find(o=>o.id===la.picked)?.text:null;
+                      return (
+                        <div key={i} className={`review-item ${ok?'correct':'wrong'}`}>
+                          <div className="review-q">{i+1}. {q.question}</div>
+                          <div className="review-ans">
+                            {ok?<span className="badge badge-ok"><ICheck size={10}/> {la.picked?.toUpperCase()}. {paTxt}</span>
+                              :<><span className="badge badge-no"><IX size={10}/> {la.picked?.toUpperCase()}. {paTxt}</span>
+                                 <span className="badge badge-ok"><ICheck size={10}/> {la.correct?.toUpperCase()}. {caTxt}</span></>}
+                          </div>
+                          {q.explanation&&<div style={{fontSize:'0.78rem',color:'var(--green-700)',marginTop:6,padding:'6px 10px',background:'var(--sage-bg)',borderRadius:8}}>💡 {q.explanation}</div>}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+              <div style={{display:'flex',gap:10}} className="au d3">
+                <button className="btn btn-secondary" style={{flex:1}} onClick={startLearnMode}><IPlay size={13}/> Ulangi</button>
+                <button className="btn btn-primary" style={{flex:2,borderRadius:'var(--radius)'}} onClick={()=>setScreen('mode')}><IBook size={14}/> Pilih Mode</button>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      const q = questions[learnIdx];
+      const answered = learnPicked !== null;
+      const isCorrect = learnPicked === q.correctAnswer;
+      return (
+        <div className="screen" style={{paddingTop:14}}>
+          <div className="topbar container">
+            <div className="logo"><span className="logo-leaf">🌿</span> Belajar</div>
+            <div className="topbar-nav">
+              <button className="nav-btn" onClick={()=>setScreen('mode')}><IBook/> Mode</button>
+              <button className="nav-btn" onClick={()=>setScreen('setup')}><IHome/> Beranda</button>
+            </div>
+          </div>
+          <div className="container">
+            <div className="learn-progress">
+              <span style={{display:'flex',alignItems:'center',gap:6}}>
+                <span style={{background:'#f5f3fb',border:'1.5px solid #c9bfe8',color:'#5c4a9a',borderRadius:99,padding:'3px 12px',fontSize:'0.75rem',fontWeight:700}}>📖 Mode Belajar</span>
+              </span>
+              <span>Soal <strong>{learnIdx+1}</strong> / {questions.length}</span>
+            </div>
+            <div className="progress-track" style={{marginBottom:18}}>
+              <div className="progress-fill" style={{width:`${((learnIdx+1)/questions.length)*100}%`,background:'linear-gradient(90deg,#8b6ec0,#a88fd4)'}}/>
+            </div>
+            <div className="learn-q-card au fi">
+              <div className="q-badge" style={{background:'#f5f3fb',color:'#5c4a9a',borderColor:'#c9bfe8'}}><IBook size={10}/> Pertanyaan {learnIdx+1}</div>
+              <div className="question-text">{q.question}</div>
+            </div>
+            <div style={{marginBottom:16}}>
+              {q.options.map(opt=>{
+                const isSelected = learnPicked===opt.id;
+                const isCorrectOpt = opt.id===q.correctAnswer;
+                let cls='learn-option';
+                if(answered){
+                  cls+=' disabled';
+                  if(isSelected&&isCorrect) cls+=' correct-pick';
+                  else if(isSelected&&!isCorrect) cls+=' wrong-pick';
+                  else if(isCorrectOpt) cls+=' reveal-correct';
+                }
+                return (
+                  <div key={opt.id} className={cls}
+                    onClick={()=>{if(!answered)setLearnPicked(opt.id);}}>
+                    <span className="option-letter" style={answered&&isCorrectOpt?{background:'var(--green-500)',color:'#fff',borderColor:'var(--green-500)'}:{}}>{opt.id.toUpperCase()}</span>
+                    <span>{opt.text}</span>
+                    {answered&&isSelected&&<span style={{marginLeft:'auto'}}>{isCorrect?'✅':'❌'}</span>}
+                    {answered&&!isSelected&&isCorrectOpt&&<span style={{marginLeft:'auto'}}>✅</span>}
+                  </div>
+                );
+              })}
+            </div>
+            {answered&&q.explanation&&(
+              <div className="learn-explanation">
+                <strong>💡 Penjelasan</strong>
+                {q.explanation}
+              </div>
+            )}
+            {answered&&!q.explanation&&(
+              <div className="alert alert-success" style={{marginBottom:12}}>
+                <ICheck size={12}/> {isCorrect?'Jawaban kamu benar! 🎉':`Jawaban benar: ${q.correctAnswer.toUpperCase()}. ${q.options.find(o=>o.id===q.correctAnswer)?.text}`}
+              </div>
+            )}
+            <div style={{display:'flex',gap:10,marginTop:14}}>
+              {answered
+                ?<button className="btn btn-primary" style={{width:'100%',borderRadius:'var(--radius)',background:'#7c6bab',boxShadow:'0 4px 20px rgba(124,107,171,0.25)'}} onClick={learnNext}>
+                    {learnIdx<questions.length-1?'Soal Berikutnya →':'Lihat Hasil 🎓'}
+                  </button>
+                :<button className="btn btn-primary" disabled style={{width:'100%',borderRadius:'var(--radius)',background:'#7c6bab',opacity:0.35}}>
+                    Pilih salah satu jawaban di atas
+                  </button>
+              }
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
+  ReactDOM.render(<App/>, document.getElementById('root'));
+</script>
+</body>
+</html>

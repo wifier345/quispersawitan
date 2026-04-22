@@ -1,0 +1,139 @@
+1. Seorang agronom mengamati daun kelapa sawit yang menunjukkan gejala klorosis di bagian tengah daun, sementara analisis tanah menunjukkan kekurangan Mg. Pupuk mana yang paling tepat untuk mengatasi kondisi ini, sekaligus memperbaiki sifat tanah masam?
+a. SP-36
+b. Kieserite *
+c. RP
+d. TSP
+explanation: Kieserite mengandung magnesium (MgSO₄) yang berfungsi mengatasi defisiensi Mg pada kelapa sawit, terlihat dari gejala klorosis. Berbeda dengan dolomit, kieserite tidak menaikkan pH tanah secara signifikan tetapi cepat tersedia bagi tanaman.
+
+2. Dalam kondisi tanah dengan pH sangat rendah, seorang petani menggunakan pupuk untuk menetralkan keasaman sekaligus menambah unsur Ca dan Mg. Pupuk tersebut kemungkinan besar adalah:
+a. Dolomit *
+b. TSP
+c. Kieserite
+d. SP-36
+explanation: Dolomit mengandung CaMg(CO₃)₂ yang berfungsi menaikkan pH tanah serta menambah kalsium (Ca) dan magnesium (Mg). Ini penting untuk tanah masam yang umum pada lahan sawit.
+
+3. Jika aplikasi SP-36 dilakukan secara berlebihan dalam jangka panjang, dampak yang paling mungkin terjadi adalah:
+a. Kekurangan nitrogen pada tanaman
+b. Penurunan ketersediaan unsur mikro seperti Zn *
+c. Peningkatan serapan Mg secara berlebihan
+d. Tanah menjadi terlalu basa
+explanation: Fosfor yang berlebih dari SP-36 dapat mengikat unsur mikro seperti Zn sehingga menjadi tidak tersedia bagi tanaman, menyebabkan defisiensi sekunder.
+
+4. Seorang petani memilih RP dibanding TSP untuk lahan dengan pH rendah. Alasan yang paling logis adalah:
+a. RP lebih cepat larut di semua kondisi tanah
+b. RP lebih efektif pada tanah basa
+c. RP larut lebih baik pada tanah masam *
+d. RP mengandung nitrogen tinggi
+explanation: Rock Phosphate (RP) lebih efektif pada tanah masam karena pelarutannya meningkat pada pH rendah, sehingga fosfor lebih tersedia.
+
+5. Gejala kelebihan aplikasi dolomit pada lahan sawit kemungkinan ditunjukkan oleh:
+a. Daun menguning karena kekurangan nitrogen
+b. Penurunan ketersediaan unsur mikro seperti Fe dan Zn *
+c. Tanaman tumbuh kerdil karena kekurangan P
+d. Akar membusuk akibat kelebihan air
+explanation: Dolomit meningkatkan pH tanah, jika berlebihan dapat menyebabkan unsur mikro seperti Fe dan Zn menjadi tidak tersedia, sehingga muncul gejala defisiensi.
+
+6. Perbedaan utama antara SP-36 dan TSP terletak pada:
+a. Kandungan nitrogen
+b. Kandungan fosfor yang lebih tinggi pada TSP *
+c. Kandungan kalium pada SP-36
+d. Kandungan magnesium pada TSP
+explanation: TSP (Triple Super Phosphate) memiliki kandungan fosfor lebih tinggi dibanding SP-36, sehingga lebih pekat sebagai sumber P.
+
+7. Jika tanaman kelapa sawit menunjukkan pertumbuhan akar yang buruk akibat kekurangan fosfor, pupuk yang paling tepat adalah:
+a. Kieserite
+b. Dolomit
+c. SP-36 *
+d. Urea
+explanation: SP-36 merupakan pupuk sumber fosfor yang berperan penting dalam perkembangan akar dan pembentukan energi (ATP).
+
+8. Dampak kekurangan magnesium pada kelapa sawit yang paling khas adalah:
+a. Daun tua menguning di bagian pinggir
+b. Daun muda menguning merata
+c. Klorosis di antara tulang daun pada daun tua *
+d. Bercak hitam pada batang
+explanation: Kekurangan Mg menyebabkan klorosis di antara tulang daun (interveinal chlorosis) terutama pada daun tua.
+
+9. Seorang petani mencampurkan dolomit dan TSP secara bersamaan. Risiko utama dari praktik ini adalah:
+a. Kehilangan nitrogen melalui penguapan
+b. Penurunan efektivitas fosfor karena reaksi kimia *
+c. Peningkatan kadar Mg berlebihan
+d. Tanah menjadi terlalu asam
+explanation: Dolomit bersifat basa dan dapat bereaksi dengan fosfat, menyebabkan fosfor menjadi kurang tersedia bagi tanaman.
+
+10. Dalam kondisi tanah miskin fosfor tetapi dengan pH netral hingga basa, pupuk yang kurang efektif digunakan adalah:
+a. TSP
+b. SP-36
+c. RP *
+d. Kieserite
+explanation: RP kurang efektif pada tanah netral atau basa karena kelarutannya rendah, sehingga fosfor sulit tersedia.
+
+11. Jika kieserite diberikan secara berlebihan, kemungkinan dampaknya adalah:
+a. Tanaman kekurangan kalsium
+b. Ketidakseimbangan unsur hara Mg dengan Ca dan K *
+c. Tanaman mengalami keracunan fosfor
+d. pH tanah turun drastis
+explanation: Kelebihan Mg dapat mengganggu keseimbangan dengan unsur lain seperti Ca dan K, sehingga penyerapan menjadi tidak optimal.
+
+12. Seorang petani ingin meningkatkan efisiensi penyerapan fosfor pada lahan masam. Strategi yang paling tepat adalah:
+a. Menambahkan dolomit sebelum aplikasi fosfat *
+b. Menambahkan urea bersamaan dengan RP
+c. Menyiram air berlebih setelah pemupukan
+d. Mengurangi dosis pupuk fosfat
+explanation: Dolomit meningkatkan pH tanah sehingga fosfor menjadi lebih tersedia dan tidak terikat oleh Al atau Fe.
+
+13. Perbedaan penting antara SP-36 dan RP dari segi ketersediaan hara adalah:
+a. SP-36 lebih lambat tersedia dibanding RP
+b. RP langsung tersedia bagi tanaman
+c. SP-36 lebih cepat tersedia dibanding RP *
+d. RP mengandung nitrogen
+explanation: SP-36 merupakan pupuk fosfat yang lebih mudah larut sehingga cepat tersedia, sedangkan RP lambat tersedia.
+
+14. Gejala kekurangan kalsium akibat tidak adanya aplikasi dolomit dalam jangka panjang dapat berupa:
+a. Daun tua berwarna ungu
+b. Pertumbuhan pucuk terganggu *
+c. Daun menggulung ke bawah
+d. Batang menjadi lunak
+explanation: Kalsium penting untuk pertumbuhan jaringan baru, sehingga kekurangannya mengganggu pertumbuhan pucuk.
+
+15. Jika pupuk TSP diaplikasikan berlebihan, efek jangka panjang yang mungkin terjadi adalah:
+a. Penurunan kadar Mg
+b. Penumpukan fosfor dan gangguan unsur mikro *
+c. Tanah menjadi kekurangan Ca
+d. Tanaman mengalami kekurangan air
+explanation: Fosfor berlebih dapat mengganggu ketersediaan unsur mikro seperti Zn dan Fe.
+
+16. Seorang petani menggunakan RP pada tanah sangat masam tetapi tidak melihat hasil signifikan. Kemungkinan penyebabnya adalah:
+a. RP terlalu cepat larut
+b. Dosis RP terlalu rendah *
+c. RP mengandung nitrogen tinggi
+d. RP meningkatkan pH tanah
+explanation: RP membutuhkan kondisi tertentu dan dosis cukup agar efektif, jika dosis rendah maka hasilnya tidak terlihat.
+
+17. Dalam sistem pemupukan berimbang, fungsi utama kieserite dibanding dolomit adalah:
+a. Menaikkan pH tanah secara cepat
+b. Menyediakan Mg yang cepat tersedia tanpa banyak mengubah pH *
+c. Menyediakan fosfor tinggi
+d. Menambah nitrogen
+explanation: Kieserite adalah sumber Mg yang cepat tersedia dan tidak banyak mempengaruhi pH tanah.
+
+18. Dampak kekurangan fosfor pada kelapa sawit seringkali sulit diamati karena:
+a. Fosfor tidak penting bagi tanaman
+b. Gejalanya tidak spesifik dan muncul lambat *
+c. Fosfor hanya diperlukan saat awal tanam
+d. Fosfor mudah hilang dari tanah
+explanation: Kekurangan fosfor biasanya menunjukkan gejala yang tidak spesifik dan berkembang lambat, sehingga sulit dideteksi.
+
+19. Penggunaan dolomit secara tepat dapat meningkatkan efisiensi pupuk lain karena:
+a. Menambah nitrogen dalam tanah
+b. Menurunkan pH tanah
+c. Memperbaiki pH sehingga hara lebih tersedia *
+d. Mengikat unsur hara
+explanation: Dolomit memperbaiki pH tanah sehingga unsur hara lain menjadi lebih tersedia bagi tanaman.
+
+20. Jika SP-36 dan TSP dibandingkan dari sisi efisiensi transportasi dan penyimpanan, maka:
+a. SP-36 lebih efisien karena kandungan lebih tinggi
+b. TSP lebih efisien karena lebih pekat *
+c. Keduanya sama saja tanpa perbedaan
+d. SP-36 lebih stabil dalam air
+explanation: TSP memiliki kandungan fosfor lebih tinggi sehingga lebih efisien dalam transportasi dan penyimpanan karena volume lebih kecil untuk hara yang sama.

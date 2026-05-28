@@ -1,299 +1,299 @@
 1. Penyakit busuk pangkal batang (Basal Stem Rot) pada kelapa sawit disebabkan oleh patogen yang termasuk dalam kelompok...
-a. Oomycetes (Phytophthora sp.)
-b. Basidiomycetes (Ganoderma boninense) *
-c. Ascomycetes (Fusarium oxysporum)
+a. Ascomycetes (Fusarium oxysporum)
+b. Oomycetes (Phytophthora sp.)
+c. Basidiomycetes (Ganoderma boninense) *
 d. Deuteromycetes (Curvularia sp.)
 
-2. Gejala awal serangan Ganoderma boninense pada kelapa sawit yang paling mudah diidentifikasi dari luar tanaman adalah...
-a. Munculnya bercak kuning di seluruh pelepah
-b. Pelepah bawah menggantung kering tidak jatuh (spear leaf mati) dan tumbuhnya konk jamur di pangkal batang *
-c. Busuk pada tandan buah segar
-d. Akar napas tumbuh berlebihan
+2. Gejala awal serangan Ganoderma boninense yang paling mudah dikenali dari luar tanaman adalah...
+a. Tumbuhnya konk jamur di pangkal batang dan pelepah bawah mengering tidak jatuh *
+b. Busuk kecokelatan pada semua tandan buah
+c. Munculnya bercak kuning menyeluruh di pelepah tua
+d. Akar napas tumbuh berlebihan di sekeliling batang
 
-3. Metode pengendalian Ganoderma yang dilakukan dengan mengangkat dan memusnahkan seluruh sisa tanaman terinfeksi termasuk akar disebut...
-a. Roguing *
-b. Eradikasi
-c. Sanitasi
-d. Fungisida sistemik
+3. Metode pengendalian Ganoderma yang dilakukan dengan mengangkat dan memusnahkan seluruh sisa tanaman terinfeksi termasuk tunggul dan akarnya disebut...
+a. Sanitasi lahan
+b. Fungisida sistemik injeksi
+c. Eradikasi kimia
+d. Roguing *
 
-4. Hama ulat pemakan daun kelapa sawit yang dikenal dengan nama "nettle caterpillar" dan meninggalkan luka bakar pada kulit ketika disentuh adalah...
-a. Tirathaba mundella
+4. Ulat pemakan daun kelapa sawit yang terkenal dengan bulu/duri menyebabkan rasa panas terbakar pada kulit ketika disentuh adalah...
+a. Metisa plana
 b. Darna trima *
-c. Setora nitens
-d. Metisa plana
+c. Tirathaba mundella
+d. Setora nitens
 
-5. Di antara jenis-jenis ulat pemakan daun sawit berikut, yang menyerang dengan cara melipat dan menyatukan anak daun muda adalah...
-a. Ulat api (Setothosea asigna)
-b. Ulat kantung (Metisa plana) *
-c. Ulat bulu (Calliteara horsfieldii)
-d. Ulat Tirathaba (Tirathaba mundella)
+5. Di antara jenis ulat berikut, yang melindungi diri dengan membuat kantung dari potongan daun sawit dan hidup di dalamnya adalah...
+a. Metisa plana (ulat kantung) *
+b. Setothosea asigna (ulat api)
+c. Tirathaba mundella (penggerek tandan)
+d. Calliteara horsfieldii (ulat bulu)
 
-6. Ambang ekonomi pengendalian ulat pemakan daun sawit umumnya ditetapkan berdasarkan...
-a. Jumlah telur yang ditemukan per pelepah
-b. Persentase luas daun yang hilang atau jumlah larva per pelepah *
-c. Perubahan warna daun secara visual
-d. Penurunan produksi TBS lebih dari 50%
+6. Ambang ekonomi pengendalian ulat pemakan daun sawit umumnya ditetapkan berdasarkan parameter...
+a. Perubahan warna daun yang dapat dilihat dari udara
+b. Penurunan produksi TBS lebih dari 30%
+c. Jumlah larva per pelepah atau persentase luas daun yang rusak *
+d. Jumlah telur yang ditemukan per pelepah aktif
 
-7. Penyakit "Crown Disease" pada kelapa sawit mengakibatkan...
-a. Busuk pada mahkota batang akibat Ganoderma
-b. Anak daun yang baru membuka tidak dapat berkembang sempurna dan mengering di ujungnya *
-c. Layu mendadak seluruh tanaman
-d. Bercak hitam di permukaan pelepah
+7. Kumbang Oryctes rhinoceros menyerang kelapa sawit paling merusak pada fase...
+a. Tanaman menghasilkan (TM) berumur 10–15 tahun
+b. Bibit di tahap pre-nursery
+c. Tanaman dalam masa berbunga lebat
+d. Tanaman belum menghasilkan (TBM) hingga umur 3–4 tahun *
 
-8. Kumbang Oryctes rhinoceros menyerang kelapa sawit terutama pada fase...
-a. Tanaman menghasilkan (TM) berumur di atas 10 tahun
-b. Tanaman belum menghasilkan (TBM) hingga umur 3–4 tahun *
-c. Bibit di pre-nursery
-d. Tanaman yang sedang berbunga
+8. Agen hayati yang paling spesifik dan efektif untuk mengendalikan populasi Oryctes rhinoceros adalah...
+a. Trichoderma harzianum
+b. Baculovirus oryctes (OrNV) *
+c. Beauveria bassiana
+d. Metarhizium anisopliae
 
-9. Agen hayati yang paling sering digunakan untuk mengendalikan populasi kumbang Oryctes rhinoceros adalah...
-a. Beauveria bassiana
-b. Metarhizium anisopliae
-c. Baculovirus oryctes (OrNV) *
-d. Trichoderma harzianum
+9. Tikus Rattus tiomanicus pada perkebunan sawit paling banyak menyebabkan kerugian ekonomis dengan cara...
+a. Mengerat dan merusak buah pada tandan yang belum dipanen *
+b. Menggali dan memutus akar lateral tanaman
+c. Memakan kecambah dan bibit muda di nursery
+d. Merusak saluran drainase sehingga lahan tergenang
 
-10. Hama tikus (Rattus tiomanicus) pada sawit paling banyak menyebabkan kerugian ekonomi dengan cara...
-a. Memakan bibit di nursery
-b. Mengerat dan merusak buah pada tandan yang belum dipanen *
-c. Menggali dan merusak akar tanaman
-d. Memakan pupuk yang baru ditabur
+10. Pengendalian hayati tikus di perkebunan sawit yang memanfaatkan predator alami dilakukan dengan cara...
+a. Melepaskan ular sanca secara massal di kebun
+b. Memasang jebakan fisik di seluruh titik jalur tikus
+c. Memelihara burung hantu Tyto alba dengan menyediakan owl box *
+d. Menanam tanaman pengusir tikus di jalur pasar pikul
 
-11. Pengendalian hayati tikus di perkebunan sawit yang memanfaatkan predator alami menggunakan...
-a. Pemasangan jebakan fisik (trapping)
-b. Burung hantu Tyto alba yang dipelihara di menara khusus (owl box) *
-c. Penyemprotan rodentisida di seluruh areal
-d. Pelepasan ular sanca di kebun
+11. "Crown disease" pada kelapa sawit mengakibatkan kondisi berupa...
+a. Busuk mahkota batang akibat infeksi Ganoderma lanjut
+b. Layu mendadak seluruh tanaman dalam hitungan hari
+c. Bercak hitam menyebar dari pangkal pelepah ke seluruh daun
+d. Anak daun tidak berkembang sempurna dan mengering di bagian ujung *
 
-12. Penyakit "bud rot" atau busuk titik tumbuh pada kelapa sawit yang ditandai dengan membusuknya spear leaf dan menyebar ke dalam batang disebabkan oleh...
-a. Ganoderma boninense
-b. Phytophthora palmivora *
-c. Fusarium oxysporum
-d. Colletotrichum gloeosporioides
+12. Penyakit "bud rot" atau busuk titik tumbuh pada kelapa sawit yang menyebabkan membusuknya spear leaf dan menjalar ke dalam batang disebabkan oleh...
+a. Fusarium oxysporum
+b. Colletotrichum gloeosporioides
+c. Phytophthora palmivora *
+d. Ganoderma boninense
 
-13. Kriteria kematangan panen TBS kelapa sawit yang paling umum digunakan di lapangan adalah...
-a. Warna tandan berubah menjadi merah gelap keseluruhan
-b. Jumlah brondolan lepas alami di piringan pohon minimal 2 brondolan per kilogram TBS *
-c. Pelepah terbawah sudah kering dan mudah dipatahkan
-d. Tandan terasa lunak ketika ditekan dengan galah
+13. Kriteria kematangan panen TBS kelapa sawit yang paling umum dan objektif digunakan di lapangan adalah...
+a. Pelepah terbawah sudah kering dan mudah dipatahkan
+b. Warna tandan berubah merah tua secara keseluruhan
+c. Tandan terasa lunak saat ditekan menggunakan gagang egrek
+d. Minimal 2 brondolan lepas alami per kilogram berat tandan di piringan pohon *
 
-14. Rotasi panen pada perkebunan kelapa sawit yang umum diterapkan adalah setiap...
-a. 5–7 hari sekali
-b. 7–10 hari sekali *
-c. 10–14 hari sekali
-d. 14–21 hari sekali
+14. Rotasi panen pada perkebunan kelapa sawit yang paling umum diterapkan adalah...
+a. Setiap 7–10 hari sekali *
+b. Setiap 5–6 hari sekali
+c. Setiap 12–14 hari sekali
+d. Setiap 14–21 hari sekali
 
-15. Istilah "unripe" dalam grading TBS di PKS merujuk pada buah yang...
-a. Sudah melewati puncak kematangan dan mulai membusuk
-b. Belum mencapai kematangan optimal dengan brondolan kurang dari standar *
-c. Memiliki kandungan air berlebih akibat hujan
-d. Terpisah dari tandan sebelum dipanen
+15. Istilah "overripe" dalam grading TBS di PKS merujuk pada buah yang...
+a. Belum matang dengan brondolan di bawah standar
+b. Memiliki kadar air sangat tinggi akibat hujan lebat
+c. Sudah melewati puncak kematangan optimal, brondolan rontok berlebihan *
+d. Terpisah paksa dari tandan sebelum dipanen
 
-16. Alasan utama mengapa TBS harus segera diolah dalam waktu maksimal 24 jam setelah dipanen adalah untuk mencegah...
-a. Kehilangan berat akibat penguapan air
-b. Peningkatan kadar asam lemak bebas (ALB/FFA) akibat aktivitas enzim lipase *
-c. Perubahan warna minyak menjadi lebih gelap
-d. Penurunan kadar karotenoid secara drastis
+16. Alasan utama TBS harus diolah maksimal 24–48 jam setelah dipanen adalah untuk mencegah...
+a. Perubahan warna minyak menjadi sangat gelap
+b. Peningkatan kadar asam lemak bebas (FFA) akibat aktivitas enzim lipase yang aktif pasca panen *
+c. Kehilangan berat tandan akibat penguapan air
+d. Tandan mengeras sehingga sulit diproses di stasiun pengepresan
 
-17. Dalam sistem panen kelapa sawit, alat potong utama yang digunakan untuk pohon dengan ketinggian di atas 5 meter adalah...
-a. Dodos (kapak pendek bermata dua)
-b. Egrek (sabit bertangkai panjang/bambu) *
-c. Parang panjang
-d. Chainsaw khusus
+17. Alat potong utama yang digunakan untuk memanen TBS dari pohon kelapa sawit dengan ketinggian di atas 5–6 meter adalah...
+a. Parang panjang bermata satu
+b. Dodos bermata dua
+c. Chainsaw bertenaga baterai
+d. Egrek (chisel) bertangkai bambu/aluminium panjang *
 
-18. Kandungan minyak dalam TBS yang sudah matang optimal berkisar antara...
-a. 8–12% dari berat TBS
-b. 18–25% dari berat TBS *
-c. 28–35% dari berat TBS
-d. 35–42% dari berat TBS
+18. Kandungan minyak (CPO + PKO) dalam TBS matang optimal dari varietas unggul berkisar antara...
+a. 18–25% dari berat TBS *
+b. 8–12% dari berat TBS
+c. 30–38% dari berat TBS
+d. 42–50% dari berat TBS
 
-19. Losses (kehilangan minyak) yang terjadi akibat buah restan (TBS tidak terangkut ke PKS) dikategorikan sebagai...
-a. Harvesting losses
-b. Transport losses
-c. Field losses *
-d. Processing losses
+19. Kehilangan minyak akibat brondolan tidak dikutip tuntas di piringan pohon menyebabkan kerugian ganda karena...
+a. Brondolan menarik hama babi hutan masuk ke kebun
+b. Biji brondolan berkecambah menjadi tanaman liar pengganggu
+c. Kehilangan minyak sekaligus brondolan busuk menjadi sumber inokulum Ganoderma di tanah *
+d. Brondolan membusuk meningkatkan kelembaban dan populasi siput moluska
 
-20. Pengutipan brondolan yang tidak dilakukan secara tuntas di piringan pohon dapat menyebabkan kerugian ganda karena...
-a. Brondolan menjadi sarang tikus dan serangga hama
-b. Kehilangan minyak sekaligus menjadi sumber inokulum penyakit Ganoderma di tanah *
-c. Menghambat pertumbuhan akar dan menurunkan produksi musim berikutnya
-d. Brondolan yang tertinggal menarik kelelawar pemakan buah
-
-21. Produksi TBS yang dicapai pada saat tanaman kelapa sawit berada pada puncak produktivitasnya (umur 10–15 tahun) rata-rata adalah...
-a. 8–12 ton/ha/tahun
+20. Produksi TBS pada puncak produktivitas tanaman sawit (umur 10–15 tahun) dengan pengelolaan optimal rata-rata mencapai...
+a. 8–14 ton/ha/tahun
 b. 15–20 ton/ha/tahun
 c. 22–30 ton/ha/tahun *
 d. 32–40 ton/ha/tahun
 
-22. Angka OER (Oil Extraction Rate) rata-rata perkebunan sawit Indonesia saat ini berkisar antara...
+21. OER (Oil Extraction Rate) rata-rata pabrik kelapa sawit (PKS) di Indonesia saat ini berkisar...
 a. 15–17%
-b. 18–20%
-c. 21–23% *
-d. 25–28%
+b. 21–23% *
+c. 26–28%
+d. 30–32%
 
-23. Jenis tanah yang paling umum dan luas dijumpai di areal perkebunan kelapa sawit di Sumatera dan Kalimantan adalah...
-a. Andosol dan Regosol
-b. Oxisol (Latosol) dan Ultisol (Podsolik Merah Kuning) *
-c. Vertisol dan Mollisol
+22. Losses minyak yang terjadi karena TBS tidak terangkut dari lapangan ke PKS dalam waktu yang ditentukan dikategorikan sebagai...
+a. Processing losses
+b. Transport losses
+c. Harvesting losses
+d. Field losses *
+
+23. Jenis tanah yang paling dominan di areal perkebunan kelapa sawit Sumatera dan Kalimantan adalah...
+a. Vertisol dan Mollisol
+b. Andosol dan Regosol
+c. Oxisol (Latosol) dan Ultisol (Podsolik Merah Kuning) *
 d. Histosol dan Gleisol
 
-24. Kisaran pH tanah yang paling optimal untuk pertumbuhan dan produksi kelapa sawit adalah...
-a. 4,0–5,0
-b. 5,0–5,5
-c. 5,5–6,5 *
-d. 6,5–7,5
+24. Kisaran pH tanah yang optimal untuk pertumbuhan dan produksi kelapa sawit adalah...
+a. 5,5–6,5 *
+b. 4,0–5,0
+c. 6,5–7,5
+d. 7,0–8,0
 
-25. Sistem tanam kelapa sawit yang menggunakan jarak tanam 9 m × 9 m × 9 m dengan pola segitiga sama sisi menghasilkan populasi tanaman per hektar sebesar...
+25. Sistem tanam pola segitiga sama sisi jarak 9×9×9 m menghasilkan populasi tanaman per hektar sebesar...
 a. 100 pokok/ha
 b. 128 pokok/ha
 c. 136 pokok/ha
 d. 143 pokok/ha *
 
-26. Tanaman penutup tanah (cover crop) yang paling umum digunakan di perkebunan kelapa sawit dan termasuk famili leguminosae adalah...
-a. Imperata cylindrica (alang-alang)
-b. Mikania micrantha
-c. Mucuna bracteata *
-d. Axonopus compressus
+26. Tanaman penutup tanah (LCC) yang paling umum digunakan di perkebunan sawit dan termasuk famili Leguminosae adalah...
+a. Axonopus compressus
+b. Mucuna bracteata *
+c. Imperata cylindrica (alang-alang)
+d. Mikania micrantha
 
-27. Pelepah kelapa sawit yang telah dipanen dan disusun di antara barisan tanaman berfungsi sebagai...
-a. Media pertumbuhan hama rayap
-b. Mulsa organik yang menjaga kelembaban tanah dan menyumbang unsur hara *
-c. Penghalang erosi tanah yang permanen
-d. Tempat bertelur serangga penyerbuk
+27. Pelepah sawit bekas panen yang disusun di gawangan mati berfungsi sebagai...
+a. Penghalang fisik mencegah erosi permanen
+b. Media pertumbuhan hama rayap dan kumbang
+c. Mulsa organik menjaga kelembaban tanah dan menyumbang unsur hara saat terdekomposisi *
+d. Tempat bertelur Elaeidobius kamerunicus penyerbuk
 
-28. Istilah "land suitability class S2" dalam evaluasi kesesuaian lahan untuk sawit berarti...
-a. Lahan sangat sesuai tanpa pembatas berarti
-b. Lahan cukup sesuai dengan beberapa pembatas yang dapat diatasi *
-c. Lahan sesuai marjinal dengan pembatas berat
-d. Lahan tidak sesuai sama sekali
+28. Kelas kesesuaian lahan "S3" dalam evaluasi untuk perkebunan sawit berarti...
+a. Sangat sesuai tanpa pembatas berarti
+b. Cukup sesuai dengan pembatas minor yang mudah diatasi
+c. Tidak sesuai secara permanen
+d. Sesuai marjinal dengan pembatas berat yang sulit dan mahal diatasi *
 
-29. Kondisi "blind sandy soil" atau tanah berpasir kuarsa di beberapa wilayah Kalimantan menjadi pembatas utama bagi sawit karena...
-a. Keasaman yang terlalu tinggi
-b. Kapasitas tukar kation (KTK) sangat rendah sehingga hara tidak tersimpan *
-c. Kandungan aluminium yang toksik
-d. Drainase yang terlalu buruk dan tergenang
+29. Tanah berpasir kuarsa (spodosol) menjadi pembatas utama budidaya sawit terutama karena...
+a. Kapasitas tukar kation (KTK) sangat rendah sehingga pupuk mudah tercuci *
+b. Keasaman yang terlalu tinggi melebihi pH 3
+c. Kandungan aluminium toksik yang sangat tinggi
+d. Drainase terlalu buruk sehingga mudah tergenang
 
-30. Teknik pemeliharaan tanaman sawit yang bertujuan mengurangi transpirasi dan meningkatkan paparan cahaya ke tandan buah disebut...
-a. Kastrasi
-b. Ablasi
-c. Pruning/songkel pelepah *
-d. Thinning
-
-31. Proses ablasi pada tanaman kelapa sawit muda yang belum menghasilkan (TBM) bertujuan untuk...
-a. Merangsang pembuahan lebih awal
-b. Membuang bunga/tandan prematur agar energi difokuskan untuk pertumbuhan vegetatif *
+30. Teknik pemeliharaan sawit yang membuang bunga dan tandan prematur pada tanaman belum menghasilkan (TBM) bertujuan untuk...
+a. Mempercepat pemanjangan batang agar cepat berproduksi
+b. Memfokuskan energi tanaman untuk pertumbuhan vegetatif yang optimal *
 c. Mencegah serangan hama pada tandan muda
-d. Mempercepat pemanjangan batang
+d. Merangsang pembuahan lebih awal dari jadwal normal
 
-32. Kebutuhan curah hujan optimal untuk pertumbuhan dan produksi kelapa sawit adalah...
-a. 500–1.000 mm/tahun merata
-b. 1.000–1.500 mm/tahun merata
-c. 1.500–2.500 mm/tahun merata *
-d. 2.500–4.000 mm/tahun merata
+31. Jumlah pelepah aktif yang direkomendasikan dipertahankan per tanaman sawit dewasa untuk keseimbangan fotosintesis optimal adalah...
+a. 20–30 pelepah
+b. 32–38 pelepah
+c. 40–56 pelepah *
+d. 58–70 pelepah
 
-33. Tanah gambut (peatland) secara teknis didefinisikan sebagai tanah dengan kandungan bahan organik minimal...
-a. 12% dan ketebalan >30 cm
-b. 30% dan ketebalan >50 cm *
-c. 50% dan ketebalan >100 cm
-d. 65% tanpa syarat ketebalan
+32. Curah hujan tahunan yang optimal dan tersebar merata untuk pertumbuhan dan produksi kelapa sawit adalah...
+a. 500–1.000 mm/tahun
+b. 1.000–1.400 mm/tahun
+c. 1.500–2.500 mm/tahun *
+d. 2.800–4.000 mm/tahun
 
-34. Kedalaman muka air tanah (water table) yang direkomendasikan pemerintah untuk kebun sawit di lahan gambut adalah...
-a. Tidak boleh lebih dalam dari 40 cm dari permukaan
-b. Tidak boleh lebih dalam dari 60 cm dari permukaan *
-c. Tidak boleh lebih dalam dari 80 cm dari permukaan
-d. Bebas tanpa pembatasan asal ada drainase
+33. Tanah gambut secara teknis didefinisikan sebagai tanah dengan kandungan bahan organik minimal...
+a. ≥30% bahan organik dan ketebalan ≥50 cm *
+b. ≥12% bahan organik dan ketebalan ≥20 cm
+c. ≥50% bahan organik tanpa syarat ketebalan
+d. ≥65% bahan organik dan ketebalan ≥30 cm
 
-35. Fenomena penurunan permukaan lahan gambut secara bertahap akibat drainase dan dekomposisi bahan organik disebut...
-a. Konsolidasi
-b. Subsiden (subsidance) *
-c. Ablasi
-d. Kompaksi
+34. Kedalaman muka air tanah yang direkomendasikan pemerintah untuk kebun sawit di lahan gambut berdasarkan regulasi adalah...
+a. Tidak boleh lebih dalam dari 80 cm dari permukaan
+b. Bebas asal tersedia sistem drainase memadai
+c. Tidak boleh lebih dalam dari 40 cm dari permukaan *
+d. Tidak boleh lebih dalam dari 100 cm dari permukaan
 
-36. Gas rumah kaca yang paling banyak dilepaskan dari proses dekomposisi gambut yang terdrainase dan menjadi perhatian utama dalam isu perubahan iklim adalah...
-a. Metana (CH₄) saja
+35. Penurunan permukaan lahan gambut secara bertahap akibat drainase dan dekomposisi bahan organik disebut...
+a. Kompaksi
+b. Konsolidasi struktural
+c. Ablasi permukaan
+d. Subsiden (subsidance) *
+
+36. Gas rumah kaca yang paling signifikan dilepaskan dari dekomposisi gambut terdrainase dan menjadi perhatian utama dalam isu iklim adalah...
+a. Metana (CH₄) dan ozon (O₃)
 b. CO₂ dan N₂O *
-c. CO₂ dan CH₄
-d. Hanya CO₂
+c. Hanya CO₂ dalam jumlah kecil
+d. Hanya CH₄ dari proses anaerobik
 
-37. Program APRIL dan APP yang menandatangani kebijakan "No Deforestation, No Peat, No Exploitation" (NDPE) menunjukkan bahwa tekanan terhadap industri sawit berasal dari...
-a. Pemerintah Indonesia secara langsung
-b. Lembaga keuangan internasional dan tekanan pasar konsumen global *
-c. Petani sawit rakyat
-d. Pemerintah daerah penghasil sawit
-
-38. Batas minimum buffer zone (sempadan) yang wajib dipertahankan antara kebun sawit dan tepi sungai/badan air menurut regulasi Indonesia adalah...
-a. 10 meter
+37. Batas minimum buffer zone (sempadan) yang wajib dipertahankan antara kebun sawit dan tepi sungai besar menurut regulasi Indonesia adalah...
+a. 100 meter *
 b. 20 meter
-c. 50 meter *
-d. 100 meter
+c. 50 meter
+d. 10 meter
 
-39. Emisi yang timbul dari pembakaran lahan gambut untuk pembukaan perkebunan disebut sangat berbahaya karena gambut mengandung karbon yang telah tersimpan selama...
-a. 10–50 tahun
-b. 100–1.000 tahun
-c. 1.000–10.000 tahun *
-d. Lebih dari 10.000 tahun
+38. Emisi dari pembakaran lahan gambut dinilai sangat serius karena karbon yang tersimpan di dalamnya telah terakumulasi selama...
+a. Sekitar 10–100 tahun
+b. Sekitar 100–500 tahun
+c. Sekitar 1.000–10.000 tahun atau lebih *
+d. Hanya puluhan tahun tapi sangat padat
 
-40. Konsep "High Conservation Value" (HCV) dalam tata kelola perkebunan sawit digunakan untuk mengidentifikasi...
-a. Lahan dengan potensi produksi TBS tertinggi
-b. Area yang memiliki nilai keanekaragaman hayati, ekosistem, atau sosial-budaya penting yang harus dilindungi *
-c. Kawasan yang telah memiliki sertifikasi ISPO/RSPO
-d. Lahan gambut dengan karbon tersimpan terbesar
+39. POME yang diolah melalui sistem anaerobik tertutup memberikan manfaat tambahan berupa...
+a. Asam lemak bebas yang dapat di-recovery kembali
+b. Biogas (CH₄) yang dapat digunakan sebagai bahan bakar pembangkit listrik *
+c. Air bersih siap buang ke sungai tanpa pengolahan lanjut
+d. Pupuk kalium cair langsung siap pakai
 
-41. POME (Palm Oil Mill Effluent) yang diolah melalui proses anaerobik dapat menghasilkan manfaat tambahan berupa...
-a. Pupuk kalium cair langsung siap pakai
-b. Biogas yang dapat digunakan sebagai bahan bakar pembangkit listrik *
-c. Air bersih yang langsung dapat dibuang ke sungai
-d. Asam lemak bebas yang dapat direcovery
+40. Konsep "High Conservation Value" (HCV) dalam tata kelola perkebunan sawit digunakan untuk...
+a. Mengidentifikasi area bernilai konservasi tinggi (biodiversitas, ekosistem, sosial-budaya) yang harus dilindungi *
+b. Menentukan lahan dengan potensi produksi TBS tertinggi
+c. Menetapkan kawasan gambut dalam yang boleh dikonversi dengan izin khusus
+d. Menghitung nilai karbon tersimpan untuk perdagangan karbon
 
-42. Konsep "Carbon Footprint" minyak sawit yang dibahas dalam konteks Renewable Energy Directive (RED) Uni Eropa berkaitan dengan...
-a. Jejak karbon dari proses panen TBS saja
-b. Total emisi gas rumah kaca sepanjang rantai produksi (life cycle assessment) dibandingkan dengan bahan bakar fosil *
-c. Karbon yang tersimpan dalam batang dan pelepah sawit
-d. Emisi dari pembakaran biodiesel sawit di kendaraan
+41. Regulasi Uni Eropa yang mensyaratkan bukti komoditas tidak berasal dari lahan yang mengalami deforestasi setelah tahun 2020 disebut...
+a. EU Taxonomy Regulation
+b. EU Green Deal Directive
+c. EU Renewable Energy Directive III (RED III)
+d. EU Deforestation Regulation (EUDR) *
 
-43. Produk hilir (downstream) berbasis minyak sawit yang memiliki nilai tambah paling tinggi dan berkembang pesat di Indonesia adalah...
-a. Minyak goreng curah
-b. Biodiesel (FAME)
-c. Oleokimia (fatty acid, fatty alcohol, glycerin) dan produk farmasi/kosmetik *
-d. RBD Palm Olein ekspor
+42. "Carbon Footprint" minyak sawit dalam konteks Renewable Energy Directive (RED) Uni Eropa berkaitan dengan...
+a. Emisi dari operasional mesin panen TBS di lapangan saja
+b. Karbon yang tersimpan dalam biomassa pelepah dan batang sawit
+c. Total emisi GRK sepanjang rantai produksi (LCA) dibandingkan baseline bahan bakar fosil *
+d. Emisi CO₂ langsung dari pembakaran biodiesel di kendaraan
 
-44. Luas total perkebunan kelapa sawit Indonesia saat ini (±2023) berada pada kisaran...
+43. Produk hilir berbasis minyak sawit yang memiliki nilai tambah paling tinggi dan terus berkembang adalah...
+a. RBD Palm Olein untuk ekspor curah
+b. Oleokimia (asam lemak, alkohol lemak, gliserin) dan turunan farmasi/kosmetik *
+c. Biodiesel (FAME) untuk mandatori domestik
+d. Minyak goreng kemasan premium
+
+44. Luas total perkebunan kelapa sawit Indonesia berdasarkan data terkini (±2022–2023) berada pada kisaran...
 a. 8–10 juta hektar
-b. 12–14 juta hektar *
-c. 16–18 juta hektar
-d. 20–22 juta hektar
+b. 20–22 juta hektar
+c. 10–12 juta hektar
+d. 15–16 juta hektar *
 
-45. Negara tujuan ekspor CPO dan produk turunan sawit Indonesia terbesar saat ini adalah...
-a. Amerika Serikat dan Australia
-b. India, China, dan Pakistan *
+45. Negara-negara tujuan ekspor CPO dan produk turunan sawit Indonesia terbesar saat ini adalah...
+a. India, China, dan Pakistan *
+b. Amerika Serikat dan Australia
 c. Uni Eropa dan Rusia
-d. Jepang dan Korea Selatan
+d. Jepang, Korea Selatan, dan Taiwan
 
-46. Pungutan ekspor CPO yang dikelola BPDP-KS digunakan antara lain untuk mendanai program-program berikut, kecuali...
-a. Program mandatori biodiesel (subsidi selisih harga)
-b. Peremajaan sawit rakyat (PSR)
-c. Penelitian dan pengembangan sawit
-d. Pembangunan infrastruktur jalan raya non-perkebunan *
+46. Dana pungutan ekspor CPO yang dikelola BPDP-KS digunakan untuk program-program berikut, kecuali...
+a. Subsidi selisih harga program mandatori biodiesel
+b. Peremajaan Sawit Rakyat (PSR)
+c. Pembangunan infrastruktur jalan raya nasional non-perkebunan *
+d. Penelitian, pengembangan, dan promosi sawit
 
-47. Harga referensi CPO yang ditetapkan pemerintah setiap bulan dan menjadi acuan penghitungan bea keluar serta pungutan ekspor ditetapkan oleh...
-a. Bank Indonesia
-b. Kementerian Keuangan (Dirjen Bea Cukai)
-c. Kementerian Perdagangan *
-d. Kementerian Pertanian
+47. Harga referensi CPO bulanan yang menjadi acuan penghitungan bea keluar dan pungutan ekspor ditetapkan oleh...
+a. Kementerian Pertanian
+b. Bank Indonesia
+c. Kementerian Keuangan (Dirjen Bea Cukai)
+d. Kementerian Perdagangan *
 
-48. Sertifikasi RSPO (Roundtable on Sustainable Palm Oil) bersifat sukarela dan berfokus pada...
-a. Memenuhi standar produksi minimum yang ditetapkan pemerintah Indonesia
-b. Memastikan minyak sawit diproduksi secara berkelanjutan memenuhi standar lingkungan dan sosial yang diakui pasar internasional *
-c. Menggantikan ISPO sebagai sertifikasi wajib di masa depan
-d. Meningkatkan kuantitas produksi TBS per hektar
+48. Perbedaan mendasar antara sertifikasi ISPO dan RSPO terletak pada...
+a. ISPO bersifat wajib (mandatory) bagi produsen di Indonesia; RSPO bersifat sukarela (voluntary) untuk pasar internasional *
+b. ISPO diakui pasar Eropa; RSPO hanya diakui pasar Asia
+c. ISPO mencakup aspek lingkungan saja; RSPO mencakup aspek sosial saja
+d. RSPO diwajibkan pemerintah Malaysia; ISPO diwajibkan FAO
 
-49. Dalam rantai pasok sawit, istilah "plasma" merujuk pada...
+49. Dalam rantai pasok sawit, petani "plasma" merujuk pada...
 a. Petani independen yang menjual TBS bebas ke PKS mana saja
-b. Kebun petani yang terikat kemitraan/kerjasama inti-plasma dengan perusahaan (inti) *
-c. Koperasi petani sawit yang memiliki PKS sendiri
-d. Blok kebun milik perusahaan yang dikelola secara terpisah
+b. Koperasi petani sawit yang memiliki dan mengelola PKS sendiri
+c. Petani yang terikat kerjasama kemitraan inti-plasma dengan perusahaan besar sebagai inti *
+d. Blok kebun milik perusahaan yang dikelola secara terpisah dari kebun inti
 
-50. Indikator produktivitas kebun sawit yang mengukur jumlah minyak yang dihasilkan per hektar per tahun disebut...
-a. OER (Oil Extraction Rate)
-b. CPO yield (ton CPO/ha/tahun) *
-c. TBS/pokok
-d. Nett Cropping Intensity
+50. Indikator produktivitas lahan kebun sawit yang mengukur jumlah CPO yang dihasilkan per hektar per tahun disebut...
+a. Nett Cropping Intensity (NCI)
+b. TBS per pokok per tahun
+c. CPO yield (ton CPO/ha/tahun) *
+d. OER (Oil Extraction Rate)

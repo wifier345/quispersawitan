@@ -2,187 +2,110 @@ SOAL TES PENGETAHUAN KELAPA SAWIT
 TOPIK: JEMBATAN TIMBANG
 ==========================================
 
-1. Sebuah fasilitas di pintu masuk PKS berfungsi mengukur berat kendaraan
-   beserta muatannya secara akurat sebelum dan sesudah pembongkaran muatan.
-   Fasilitas tersebut dalam operasional PKS dikenal dengan istilah...
+1. Sebuah fasilitas di pintu masuk PKS berfungsi mengukur berat kendaraan beserta muatannya secara akurat sebelum dan sesudah pembongkaran muatan. Fasilitas tersebut dalam operasional PKS dikenal dengan istilah...
 
    a. Loading ramp stasioner
    b. Pos sortasi buah masuk
    c. Jembatan timbang *
    d. Platform penerimaan TBS
 
-2. Perhatikan pernyataan berikut mengenai tujuan penggunaan jembatan timbang
-   di perkebunan sawit:
-   (I)  Menentukan jumlah TBS yang diterima sebagai dasar pembayaran kepada
-        pemasok atau kebun pengirim
-   (II) Mengukur kecepatan kendaraan pengangkut TBS saat memasuki PKS
-   (III) Menjadi dasar perhitungan rendemen dan efisiensi pengolahan
-   (IV) Membantu penentuan jadwal perawatan mesin produksi di PKS
-
-   Pernyataan yang BENAR terkait tujuan utama jembatan timbang adalah...
+2. Perhatikan pernyataan berikut mengenai tujuan penggunaan jembatan timbang di perkebunan sawit: (I) Menentukan jumlah TBS yang diterima sebagai dasar pembayaran kepada pemasok atau kebun pengirim (II) Mengukur kecepatan kendaraan pengangkut TBS saat memasuki PKS (III) Menjadi dasar perhitungan rendemen dan efisiensi pengolahan (IV) Membantu penentuan jadwal perawatan mesin produksi di PKS. Pernyataan yang BENAR terkait tujuan utama jembatan timbang adalah...
 
    a. I, II, dan III
    b. I dan II
    c. II dan IV
    d. I dan III *
 
-3. Seorang manajer PKS menginstruksikan agar jembatan timbang dilakukan
-   kalibrasi ulang. Pernyataan yang PALING TEPAT menggambarkan pengertian
-   kalibrasi jembatan timbang adalah...
+3. Seorang manajer PKS menginstruksikan agar jembatan timbang dilakukan kalibrasi ulang. Pernyataan yang PALING TEPAT menggambarkan pengertian kalibrasi jembatan timbang adalah...
 
-   a. Proses penggantian komponen sensor yang sudah rusak akibat pemakaian
-      jangka panjang
-   b. Proses verifikasi dan penyesuaian hasil pengukuran alat timbang
-      terhadap standar berat yang telah diketahui nilainya *
+   a. Proses penggantian komponen sensor yang sudah rusak akibat pemakaian jangka panjang
+   b. Proses verifikasi dan penyesuaian hasil pengukuran alat timbang terhadap standar berat yang telah diketahui nilainya *
    c. Proses pembersihan dan pelumasan mekanis pada platform timbang
    d. Proses pembaruan perangkat lunak sistem pencatatan timbangan
 
-4. Kalibrasi jembatan timbang umumnya dilakukan menggunakan beban standar
-   bersertifikat. Tujuan penggunaan beban standar bersertifikat dalam
-   proses ini adalah...
+4. Kalibrasi jembatan timbang umumnya dilakukan menggunakan beban standar bersertifikat. Tujuan penggunaan beban standar bersertifikat dalam proses ini adalah...
 
    a. Agar proses kalibrasi dapat dilakukan lebih cepat dan efisien
    b. Karena beban standar lebih mudah didapatkan dibanding beban aktual
-   c. Untuk memastikan nilai acuan yang digunakan dalam kalibrasi dapat
-      dipertanggungjawabkan secara metrologi dan hukum *
-   d. Karena beban standar lebih ringan dan mudah dipindahkan ke atas
-      platform timbang
+   c. Untuk memastikan nilai acuan yang digunakan dalam kalibrasi dapat dipertanggungjawabkan secara metrologi dan hukum *
+   d. Karena beban standar lebih ringan dan mudah dipindahkan ke atas platform timbang
 
-5. Dalam satu periode operasional PKS, jembatan timbang tidak pernah
-   dikalibrasi. Dampak yang paling LANGSUNG dan MERUGIKAN dari kondisi
-   tersebut terhadap operasional bisnis perkebunan adalah...
+5. Dalam satu periode operasional PKS, jembatan timbang tidak pernah dikalibrasi. Dampak yang paling LANGSUNG dan MERUGIKAN dari kondisi tersebut terhadap operasional bisnis perkebunan adalah...
 
-   a. Antrian kendaraan pengangkut TBS akan semakin panjang dan tidak
-      terkendali di depan pos timbang
-   b. Nilai berat yang tercatat menjadi tidak akurat sehingga berpotensi
-      menimbulkan selisih pembayaran yang merugikan salah satu pihak *
-   c. Mesin pengolah di PKS akan menerima beban kerja melebihi kapasitas
-      yang telah dirancang
+   a. Antrian kendaraan pengangkut TBS akan semakin panjang dan tidak terkendali di depan pos timbang
+   b. Nilai berat yang tercatat menjadi tidak akurat sehingga berpotensi menimbulkan selisih pembayaran yang merugikan salah satu pihak *
+   c. Mesin pengolah di PKS akan menerima beban kerja melebihi kapasitas yang telah dirancang
    d. Laporan produksi harian tidak dapat dicetak oleh sistem komputer
 
-6. Sebuah PKS menggunakan jembatan timbang yang tidak terkalibrasi dengan
-   hasil pembacaan yang secara konsisten menunjukkan angka 200 kg LEBIH
-   TINGGI dari berat sebenarnya. Jika dalam sehari ada 100 kendaraan
-   melintas, konsekuensi bisnis yang terjadi adalah...
+6. Sebuah PKS menggunakan jembatan timbang yang tidak terkalibrasi dengan hasil pembacaan yang secara konsisten menunjukkan angka 200 kg LEBIH TINGGI dari berat sebenarnya. Jika dalam sehari ada 100 kendaraan melintas, konsekuensi bisnis yang terjadi adalah...
 
    a. PKS diuntungkan karena bahan baku yang diterima tercatat lebih banyak
-   b. Pemasok TBS dirugikan karena mereka dibayar berdasarkan angka yang
-      dikira akurat namun sebenarnya terlalu tinggi, sehingga PKS
-      membayar lebih dari seharusnya *
+   b. Pemasok TBS dirugikan karena mereka dibayar berdasarkan angka yang dikira akurat namun sebenarnya terlalu tinggi, sehingga PKS membayar lebih dari seharusnya *
    c. Tidak ada dampak selama selisihnya masih di bawah 500 kg per kendaraan
-   d. PKS akan membayar pemasok lebih rendah dari berat TBS yang
-      sebenarnya dikirimkan
+   d. PKS akan membayar pemasok lebih rendah dari berat TBS yang sebenarnya dikirimkan
 
-7. Komponen jembatan timbang yang berfungsi sebagai sensor utama pengubah
-   gaya berat mekanis menjadi sinyal listrik yang kemudian diteruskan ke
-   sistem indikator adalah...
+7. Komponen jembatan timbang yang berfungsi sebagai sensor utama pengubah gaya berat mekanis menjadi sinyal listrik yang kemudian diteruskan ke sistem indikator adalah...
 
    a. Indikator digital / display unit
    b. Platform / deck timbang
    c. Load cell *
    d. Printer tiket timbang
 
-8. Perhatikan daftar komponen berikut:
-   (1) Load cell
-   (2) Indikator/display
-   (3) Printer
-   (4) Platform/dek
-   (5) Pondasi beton
-   (6) Junction box
-
-   Komponen yang secara langsung terlibat dalam ALUR PENGOLAHAN SINYAL
-   dari berat fisik menjadi angka yang terbaca oleh operator adalah...
+8. Perhatikan daftar komponen berikut: (1) Load cell (2) Indikator/display (3) Printer (4) Platform/dek (5) Pondasi beton (6) Junction box. Komponen yang secara langsung terlibat dalam ALUR PENGOLAHAN SINYAL dari berat fisik menjadi angka yang terbaca oleh operator adalah...
 
    a. (4), (1), (6), (2) *
    b. (5), (4), (3), (2)
    c. (1), (3), (5), (6)
    d. (4), (5), (1), (3)
 
-9. Junction box dalam sistem jembatan timbang memiliki fungsi yang sering
-   disalahpahami sebagai sekadar kotak terminal kabel. Fungsi teknisnya
-   yang LEBIH SPESIFIK adalah...
+9. Junction box dalam sistem jembatan timbang memiliki fungsi yang sering disalahpahami sebagai sekadar kotak terminal kabel. Fungsi teknisnya yang LEBIH SPESIFIK adalah...
 
-   a. Menyimpan cadangan daya listrik agar timbang tetap berfungsi saat
-      mati listrik
-   b. Mengumpulkan dan menggabungkan sinyal dari beberapa load cell secara
-      paralel menjadi satu sinyal output ke indikator *
+   a. Menyimpan cadangan daya listrik agar timbang tetap berfungsi saat mati listrik
+   b. Mengumpulkan dan menggabungkan sinyal dari beberapa load cell secara paralel menjadi satu sinyal output ke indikator *
    c. Melindungi seluruh sistem dari lonjakan tegangan listrik eksternal
    d. Mengonversi sinyal analog dari load cell menjadi format digital
 
-10. Seorang teknisi menemukan bahwa pembacaan timbangan tidak stabil dan
-    berfluktuasi meskipun kendaraan sudah berhenti sempurna di atas platform.
-    Dari daftar komponen berikut, komponen mana yang PALING MUNGKIN mengalami
-    gangguan sehingga menyebabkan kondisi tersebut?
+10. Seorang teknisi menemukan bahwa pembacaan timbangan tidak stabil dan berfluktuasi meskipun kendaraan sudah berhenti sempurna di atas platform. Dari daftar komponen berikut, komponen mana yang PALING MUNGKIN mengalami gangguan sehingga menyebabkan kondisi tersebut?
 
     a. Printer tiket karena kehabisan kertas
     b. Indikator display karena layar bermasalah
     c. Load cell yang mengalami kerusakan atau kontaminasi *
     d. Pondasi beton yang belum cukup kering
 
-11. Platform atau dek timbang merupakan komponen yang paling tampak secara
-    fisik pada jembatan timbang. Selain sebagai tumpuan kendaraan, fungsi
-    teknis platform yang berkaitan langsung dengan akurasi pengukuran
-    adalah...
+11. Platform atau dek timbang merupakan komponen yang paling tampak secara fisik pada jembatan timbang. Selain sebagai tumpuan kendaraan, fungsi teknis platform yang berkaitan langsung dengan akurasi pengukuran adalah...
 
     a. Melindungi load cell dari paparan cuaca dan air hujan secara langsung
-    b. Mendistribusikan beban kendaraan secara merata ke seluruh load cell
-       yang terpasang di bawahnya *
-    c. Menjadi isolator getaran agar kendaraan lain di luar timbang tidak
-       mempengaruhi hasil baca
+    b. Mendistribusikan beban kendaraan secara merata ke seluruh load cell yang terpasang di bawahnya *
+    c. Menjadi isolator getaran agar kendaraan lain di luar timbang tidak mempengaruhi hasil baca
     d. Menopang sistem kabel jaringan yang menghubungkan sensor ke indikator
 
-12. Sebuah PKS baru saja melakukan penggantian indikator digital pada
-    jembatan timbangnya. Setelah penggantian, teknisi WAJIB melakukan
-    prosedur tertentu sebelum alat tersebut digunakan kembali secara
-    operasional. Prosedur yang dimaksud adalah...
+12. Sebuah PKS baru saja melakukan penggantian indikator digital pada jembatan timbangnya. Setelah penggantian, teknisi WAJIB melakukan prosedur tertentu sebelum alat tersebut digunakan kembali secara operasional. Prosedur yang dimaksud adalah...
 
     a. Uji coba dengan kendaraan kosong sebanyak 10 kali secara berturut-turut
-    b. Kalibrasi ulang untuk memastikan indikator baru terbaca akurat
-       sesuai nilai load cell yang sudah terpasang *
+    b. Kalibrasi ulang untuk memastikan indikator baru terbaca akurat sesuai nilai load cell yang sudah terpasang *
     c. Penggantian seluruh load cell agar kompatibel dengan indikator baru
     d. Pelaporan ke dinas terkait bahwa timbangan sedang tidak beroperasi
 
-13. Dalam konteks regulasi metrologi legal di Indonesia, jembatan timbang
-    yang digunakan untuk transaksi jual beli TBS wajib memiliki tanda tera
-    yang masih berlaku. Kewajiban ini berkaitan langsung dengan salah satu
-    aspek kalibrasi, yaitu...
+13. Dalam konteks regulasi metrologi legal di Indonesia, jembatan timbang yang digunakan untuk transaksi jual beli TBS wajib memiliki tanda tera yang masih berlaku. Kewajiban ini berkaitan langsung dengan salah satu aspek kalibrasi, yaitu...
 
     a. Aspek efisiensi operasional agar antrian kendaraan tidak panjang
     b. Aspek keselamatan kerja operator timbang di pos penimbangan
-    c. Aspek legalitas dan perlindungan hukum bagi kedua pihak dalam
-       transaksi berat yang menggunakan alat ukur tersebut *
-    d. Aspek perawatan preventif agar usia pakai jembatan timbang lebih
-       panjang
+    c. Aspek legalitas dan perlindungan hukum bagi kedua pihak dalam transaksi berat yang menggunakan alat ukur tersebut *
+    d. Aspek perawatan preventif agar usia pakai jembatan timbang lebih panjang
 
-14. Sebuah PKS melakukan penimbangan TBS dengan prosedur: kendaraan masuk
-    ditimbang (berat kotor), kemudian setelah bongkar muat, kendaraan
-    ditimbang kembali (berat kosong). Tujuan utama dilakukannya DUA KALI
-    penimbangan tersebut adalah...
+14. Sebuah PKS melakukan penimbangan TBS dengan prosedur: kendaraan masuk ditimbang (berat kotor), kemudian setelah bongkar muat, kendaraan ditimbang kembali (berat kosong). Tujuan utama dilakukannya DUA KALI penimbangan tersebut adalah...
 
-    a. Untuk memverifikasi bahwa kendaraan tidak mengalami kerusakan selama
-       proses pembongkaran di loading ramp
-    b. Untuk menghitung berat netto TBS yang sebenarnya diterima PKS dengan
-       rumus: berat kotor dikurangi berat kosong kendaraan *
-    c. Untuk memastikan kendaraan tidak membawa muatan berbahaya yang
-       disembunyikan setelah pembongkaran
-    d. Untuk keperluan laporan bahan bakar kendaraan kepada departemen
-       transportasi kebun
+    a. Untuk memverifikasi bahwa kendaraan tidak mengalami kerusakan selama proses pembongkaran di loading ramp
+    b. Untuk menghitung berat netto TBS yang sebenarnya diterima PKS dengan rumus: berat kotor dikurangi berat kosong kendaraan *
+    c. Untuk memastikan kendaraan tidak membawa muatan berbahaya yang disembunyikan setelah pembongkaran
+    d. Untuk keperluan laporan bahan bakar kendaraan kepada departemen transportasi kebun
 
-15. Seorang auditor internal menemukan bahwa selama 6 bulan terakhir, data
-    timbang menunjukkan angka yang selalu lebih rendah dari estimasi
-    produksi kebun. Setelah investigasi, ditemukan bahwa load cell pada
-    posisi belakang platform mengalami kerusakan parsial sehingga tidak
-    membaca beban secara penuh. Dampak yang PALING MUNGKIN terjadi selama
-    6 bulan tersebut adalah...
+15. Seorang auditor internal menemukan bahwa selama 6 bulan terakhir, data timbang menunjukkan angka yang selalu lebih rendah dari estimasi produksi kebun. Setelah investigasi, ditemukan bahwa load cell pada posisi belakang platform mengalami kerusakan parsial sehingga tidak membaca beban secara penuh. Dampak yang PALING MUNGKIN terjadi selama 6 bulan tersebut adalah...
 
-    a. Kendaraan dengan muatan berat ditolak masuk karena melebihi batas
-       kapasitas timbang yang terdeteksi sistem
-    b. PKS membayar pemasok TBS lebih rendah dari jumlah yang seharusnya
-       karena berat netto yang tercatat lebih kecil dari aktual *
-    c. Rendemen CPO di PKS tercatat lebih tinggi dari seharusnya karena
-       input bahan baku tercatat lebih sedikit
-    d. Hanya kendaraan yang memarkir lebih ke depan platform yang
-       terpengaruh, sehingga dampak finansialnya tidak signifikan
+    a. Kendaraan dengan muatan berat ditolak masuk karena melebihi batas kapasitas timbang yang terdeteksi sistem
+    b. PKS membayar pemasok TBS lebih rendah dari jumlah yang seharusnya karena berat netto yang tercatat lebih kecil dari aktual *
+    c. Rendemen CPO di PKS tercatat lebih tinggi dari seharusnya karena input bahan baku tercatat lebih sedikit
+    d. Hanya kendaraan yang memarkir lebih ke depan platform yang terpengaruh, sehingga dampak finansialnya tidak signifikan
 
 ==========================================
 KUNCI JAWABAN:
